@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Nintendo | Nickelodeon</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body class="body">
+	<div class="wrapper">
+		<!--Page header-->
+		<header class="header">
+			<nav class="header__nav header-nav">
+				<div class="header__logo">
+					<a class="header__link" href="labo.html" target="_self">
+						<img class="header__img" src="img/labo-logo.svg" alt="Nintendo Labo" />
+					</a>
+				</div>
+        <!--Мобильная часть меню-->
+        <ul class="header-nav__list nav-list nav-list--mobile">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#" target="_self">Регистрация</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#" target="_self">Вход</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#" target="_self">Выход</a>
+          </li>
+        </ul>
+        <!--Кнопка-->
+        <button class="header-nav__toggle" type="button"></button>
+        <!--Десктопное меню-->
+				<ul class="header-nav__list nav-list nav-list--desktop">
+					<li class="nav-list__item">
+						<a class="nav-list__link" href="#" target="_self">На главную</a>
+					</li>
+					<li class="nav-list__item">
+						<a class="nav-list__link" href="#" target="_self">Регистрация/Вход</a>
+					</li>
+					<li class="nav-list__item">
+						<a class="nav-list__link" href="#" target="_self">Как участвовать</a>
+					</li>
+					<li class="nav-list__item">
+						<a class="nav-list__link" href="#" target="_self">Призы</a>
+					</li>
+					<li class="nav-list__item">
+						<a class="nav-list__link" href="#" target="_self">Победители</a>
+					</li>
+					<li class="nav-list__item">
+						<a class="nav-list__link" href="#" target="_self">Выход</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!--Page main part-->
+		<main class="main">
+			<!--Контентная область для страницы викторины-->
+			<div class="main__choose choose">
+				<!--Левая зона-->
+				<section class="choose__left left">
+					<!--Уведомление для юзера-->
+					<div class="left__information">
+						<!--для незарегистрированного-->
+						<p class="left__unregistered">Привет!<br />Скорее регистрируйся, отвечай на вопросы и выиграй игровой набор Nintendo Labo!</p>
+						<!--для зарегистрированного-->
+						<div class="left__registered">
+							<b class="left__title">Привет, <span class="left__name">Алексей!</span></b>
+							<p class="left__answer">На этой неделе у тебя <span class="left__answer--count">5</span> правильных ответов</p>
+						</div>
+					</div>
+          <!--Изображение, меняется-->
+          <img class="left__image left__image--1" src="img/labo1.svg" alt="" />
+          <img class="left__image left__image--2" src="img/labo2.svg" alt="" />
+          <img class="left__image left__image--3" src="img/labo3.svg" alt="" />
+          <img class="left__image left__image--4" src="img/labo4.svg" alt="" />
+          <img class="left__image left__image--5" src="img/labo5.svg" alt="" />
+				</section>
+				<!--Центральная зона-->
+				<section class="choose__center center">
+          <!--Блок викторины-->
+          <div class="center__contest contest">
+            <div class="contest__video">
+              <div class="contest__play">
+                <iframe class="contest__video" src="https://www.youtube.com/embed/9Y4WItnbIAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <!--Блок вопросов-->
+            <form class="contest__form contest-form" action="#" method="post">
+              <h2 class="contest-form__question">Что случилось с самым первым вариантом школьного проекта Кензи и Бэйб?</h2>
+              <ul class="contest-form__list form-list">
+                <li class="form-list__item">
+                  <input class="visually-hidden form-list__input" type="radio" name="answer-1" id="variant-1" value="variant-1" />
+                  <label class="form-list__label" for="variant-1">Ответ номер 1</label>
+                </li>
+                <li class="form-list__item">
+                  <input class="visually-hidden form-list__input" type="radio" name="answer-1" id="variant-2" value="variant-2" />
+                  <label class="form-list__label" for="variant-2">Ответ номер 2</label>
+                </li>
+                <li class="form-list__item">
+                  <input class="visually-hidden form-list__input" type="radio" name="answer-1" id="variant-3" value="variant-2" />
+                  <label class="form-list__label" for="variant-3">Ответ номер 3</label>
+                </li>
+              </ul>
+              <button class="contest-form__submit" type="submit">Отправить</button>
+            </form>
+          </div>
+          <!--Блок фидбека после ответа-->
+          <div class="center__feedback feedback">
+            <div class="feedback__reaction">
+              <p class="feedback__text feedback__text--success">Отлично!  Это правильный ответ. Возвращайся завтра, чтобы ответить на следующий вопрос!</p>
+              <p class="feedback__text feedback__text--unsuccess">Сегодня тебе не повезло. Но не расстраивайся, акция продолжается, и у тебя ещё будет шанс выиграть!</p>
+            </div>
+            <div class="feedback__infromation">
+              <p class="feedback__text">На этой неделе у тебя <span class="feedback__text--count">5</span> правильных ответов</p>
+            </div>
+          </div>
+				</section>
+        <!--Правая зона-->
+        <section class="choose__right right">
+          <a class="right__information" href="labo.html" target="_self">
+            <!--Див с меняющимся контентом по релоаду-->
+            <img class="right__image right__image--1" src="img/labo-r1.svg" alt="" />
+            <img class="right__image right__image--2" src="img/labo-r2.svg" alt="" />
+            <img class="right__image right__image--3" src="img/labo-r3.svg" alt="" />
+            <img class="right__image right__image--4" src="img/labo-r4.svg" alt="" />
+            <img class="right__image right__image--5" src="img/labo-r5.svg" alt="" />
+            <b class="right__description">Узнай больше <span class="right__description--small">о Nintendo Labo</span></b>
+          </a>
+        </section>
+			</div>
+		</main>
+		<!--Page footer-->
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__logo">
+					<a class="footer__link" href="#" target="_blank">
+						<img class="footer__img" src="img/nick-logo.svg" alt="Nickelodeon Rus" />
+					</a>
+				</div>
+				<!--Rules and policies-->
+				<ul class="footer__documents document-list">
+					<li class="document-list__item">
+						<a class="document-list__link" target="_self" href="#">Условия проведения конкурса</a>
+					</li>
+					<li class="document-list__item">
+						<a class="document-list__link" target="_self" href="#">Политика обработки персональных данных</a>
+					</li>
+				</ul>
+				<!--Social media block-->
+				<ul class="footer__social social-list">
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--yt" href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--in" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--fb" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--tw" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link social-list__link--vk" href="#" target="_blank"><i class="fab fa-vk"></i></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+  <!--Регистрационные формы-->
+  <!--Форма выбора действия - вход или регистрация-->
+  <div class="popup-enter" style="display: none;">
+    <div class="popup-enter__wrapper">
+      <button class="popup-enter__close closer" type="button"></button>
+      <button class="popup-enter__btn popup-enter__btn--register" type="button">Регистрация</button>
+      <button class="popup-enter__btn popup-enter__btn--enter" type="button">Вход</button>
+      <a class="popup-enter__recovery" href="#">Забыл пароль?</a>
+    </div>
+  </div>
+  <!--Форма регистрации-->
+  <div class="popup-register" style="display: none;">
+    <div class="popup-register__wrapper">
+      <button class="popup-register__close closer" type="button"></button>
+      <h2 class="popup-register__title">Регистрация</h2>
+      <form class="popup-register__form reg-form" method="post" action="#">
+        <ul class="reg-form__list reg-list">
+          <li class="reg-list__item">
+            <label class="reg-list__label" for="name">Твоё имя:</label>
+            <input class="reg-list__input" type="text" name="name" id="name" />
+            <span class="reg-list__error reg-list__error--name">Ты забыл написать своё имя!</span>
+          </li>
+          <li class="reg-list__item">
+            <label class="reg-list__label" for="tel">Номер телефона:</label>
+            <input class="reg-list__input" type="tel" name="tel" id="tel" />
+            <span class="reg-list__error reg-list__error--tel">Ты забыл написать номер телефона!</span>
+          </li>
+          <li class="reg-list__item">
+            <label class="reg-list__label" for="pass">Придумай пароль:</label>
+            <input class="reg-list__input" type="password" name="pass" id="pass" />
+            <span class="reg-list__error reg-list__error--pass">Ты забыл написать номер телефона!</span>
+          </li>
+          <li class="reg-list__item reg-list__item--agreement">
+            <input class="reg-list__checkbox reg-list__checkbox--agreement visually-hidden" type="checkbox" name="agree" id="agree" required checked />
+            <label class="reg-list__label reg-list__label--checkbox reg-list__label--agreement" for="agree">Я согласен на <a class="reg-list__label--link" href="#" target="_blank">обработку персональных данных</a></label>
+            <span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
+          </li>
+          <li class="reg-list__item reg-list__item--policy">
+            <input class="reg-list__checkbox reg-list__checkbox--policy visually-hidden" type="checkbox" name="policy" id="policy" required checked />
+            <label class="reg-list__label reg-list__label--checkbox reg-list__label--policy" for="policy">Я согласен с <a class="reg-list__label--link" href="#" target="_blank">условиями проведения конкурсов</a></label>
+            <span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
+          </li>
+        </ul>
+        <button class="reg-form__submit" type="submit">Отправить</button>
+      </form>
+      <div class="popup-register__bottom">
+        <b class="popup-register__text">Если ты уде зарегистрирован,<a class="popup-register__link" href="#" target="_self">Нажми сюда</a></b>
+      </div>
+    </div>
+  </div>
+  <!--Форма входа в свою УЗ-->
+  <div class="popup-login" style="display: none;">
+    <div class="popup-login__wrapper">
+      <button class="popup-login__close closer" type="button"></button>
+      <form class="popup-login__form log-form">
+        <h2 class="log-form__title">Вход</h2>
+        <ul class="log-form__list log-list">
+          <li class="log-list__item">
+            <label class="log-list__label" for="phone">Твой номер телефона:</label>
+            <input class="log-list__input" type="tel" name="phone" id="phone" />
+            <span class="log-list__error log-list__error--phone">Такой номер не зарегистрирован!</span>
+          </li>
+          <li class="log-list__item">
+            <label class="log-list__label" for="password">Пароль:</label>
+            <input class="log-list__input" type="password" name="password" id="password" />
+            <span class="log-list__error log-list__error--password">Пароль введён неверно!</span>
+          </li>
+        </ul>
+        <a class="log-form__recovery" href="#" target="_self">Забыли пароль?</a>
+        <button class="log-form__submit" type="submit">Войти</button>
+      </form>
+      <div class="popup-login__bottom">
+        <b class="popup-login__text">Если ты не зарегистрирован, <a class="popup-login__link" href="#" target="_self">Нажми сюда</a></b>
+      </div>
+    </div>
+  </div>
+  <!--Форма восстановления пароля-->
+  <div class="popup-recover" style="display: none;">
+    <div class="popup-recover__wrapper">
+      <button class="popup-recover__close closer" type="button"></button>
+      <h2 class="popup-recover__title">Забыл пароль?</h2>
+      <b class="popup-recover__subtitle">Ничего страшного! Просто введи свой номер телефона, и мы пришлём твой пароль в смс</b>
+      <form class="popup-recover__form recover-form" method="post" action="#">
+        <label class="recover-form__label" for="recover-phone">Номер телефона:</label>
+        <input class="recover-form__input" type="tel" name="recover-phone" id="recover-phone" />
+        <span class="recover-form__error">Данный номер телефона не зарегистрирован!</span>
+        <button class="recover-form__submit" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+	<!--Попап с правилами участия-->
+	<div class="popup-rules" style="display: none;">
+		<div class="popup-rules__wrapper">
+			<button class="popup-rules__close" type="button"></button>
+			<div class="popup-rules__body">
+				<h3 class="popup-rules__title">Как участвовать?</h3>
+				<ul class="popup-rules__list">
+					<li class="popup-rules__item">
+						<b class="popup-rules__nr">1</b>
+						<span class="popup-rules__text">Каждый день отвечай на новый вопрос</span>
+					</li>
+					<li class="popup-rules__item">
+						<b class="popup-rules__nr">2</b>
+						<span class="popup-rules__text">Собери 7 правильных ответов за неделю</span>
+					</li>
+					<li class="popup-rules__item">
+						<b class="popup-rules__nr">3</b>
+						<span class="popup-rules__text">Получи шанс выиграть набор Nintendo Labo!</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--Попап с призами-->
+	<div class="popup-prize" style="display: none;">
+		<div class="popup-prize__wrapper">
+			<button class="popup-prize__close" type="button"></button>
+			<div class="popup-prize__body">
+        <h3 class="popup-prize__title">Призы</h3>
+				<img class="popup-prize__img" src="img/prize.png" alt="Nintendo Labo Variety Kit" />
+				<p class="popup-prize__description">Каждую неделю, среди тех кто ответит правильно на все 7 вопросов, мы будем разыгрывать набор &laquo;Nintendo Switch + Labo Variety Kit&raquo;!</p>
+			</div>
+		</div>
+	</div>
+  <!--Попап неуспеха-->
+  <div class="popup-mistake" style="display: none;">
+    <div class="popup-mistake__wrapper">
+      <button class="popup-mistake__close" type="button"></button>
+      <div class="popup-mistake__body">
+        <p class="popup-mistake__description">Упс, неправильно. Попробуй ещё раз!</p>
+      </div>
+    </div>
+  </div>
+  <!--Попап слайдера с Победителями-->
+  <div class="popup-winner" style="display: none;">
+    <div class="popup-winner__wrapper">
+      <button class="popup-winner__close closer" type="button"></button>
+      <h2 class="popup-winner__title">Победители</h2>
+      <ul class="popup-winner__list">
+        <li class="popup-winner__item">
+          <span class="popup-winner__date">17.06 - 23.06</span>
+          <b class="popup-winner__title">Победитель этой недели:</b>
+        </li>
+        <li class="popup-winner__item">
+          <b class="popup-winner__name">Иванов Иван</b>
+          <span class="popup-winner__city">г. Москва</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

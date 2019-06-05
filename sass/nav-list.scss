@@ -1,0 +1,248 @@
+.nav-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  position: relative;
+
+  @include flex-setting(column, flex-start, center, nowrap);
+
+  &__item {
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    &--howto {
+      &::after {
+        position: absolute;
+        content: '';
+
+        width: 100%;
+        height: 3px;
+
+        top: 0;
+        left: 0;
+
+        background-image: url('../img/menu-item-1.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: cover;
+      }
+    }
+
+    &--prize {
+      &::after {
+        position: absolute;
+        content: '';
+
+        width: 100%;
+        height: 3px;
+
+        top: 0;
+        left: 0;
+
+        background-image: url('../img/menu-item-2.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: cover;
+      }
+    }
+
+    &--rules {
+
+      &::before {
+        position: absolute;
+        content: '';
+
+        width: 100%;
+        height: 3px;
+
+        bottom: -1px;
+        left: 0;
+
+        background-image: url('../img/menu-item-4.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: cover;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+
+        width: 100%;
+        height: 3px;
+
+        top: 0;
+        left: 0;
+
+        background-image: url('../img/menu-item-3.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__link {
+    @include font-setting($alternate-font, 1em, normal, 400, $text-primary);
+    @include flex-setting(column, center, center, nowrap);
+
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+
+    padding-top: 12px;
+    padding-bottom: 10px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &:hover,
+    &:active {
+      color: $social-hover;
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile) {
+  .nav-list {
+    &__link {
+      font-size: 1.125em;
+
+      padding-top: 14px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: $smt) {
+  .nav-list {
+    &__link {
+      font-size: 3em;
+
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .nav-list {
+    &__link {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .nav-list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: auto;
+
+    &__item {
+      width: auto;
+      @include flex-setting(column, center, center, nowrap);
+
+      box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.5);
+      -webkit-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.5);
+
+      &::after,
+      &::before {
+        display: none;
+      }
+
+      &--howto {
+        display: none;
+      }
+
+      &--prize {
+        background-image: url('../img/menu-prize-bg.png');
+        background-size: 89px 34px;
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        width: 89px;
+        height: 34px;
+
+        margin-right: 20px;
+      }
+
+      &--rules {
+        background-image: url('../img/menu-rules-bg.png');
+        background-size: 109px 34px;
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        width: 109px;
+        height: 34px;
+      }
+    }
+
+    &__link {
+      padding-top: 0px;
+      padding-bottom: 0px;
+
+      font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-hd) {
+  .nav-list {
+    &__item {
+      &--prize {
+        background-size: 118px 45px;
+
+        width: 118px;
+        height: 45px;
+
+        margin-right: 20px;
+      }
+
+      &--rules {
+        background-size: 145px 45px;
+
+        width: 145px;
+        height: 45px;
+      }
+    }
+
+    &__link {
+      font-size: 1.25em;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-hd) {
+  .nav-list {
+    &__item {
+      &--prize {
+        background-size: cover;
+
+        width: 156px;
+        height: 60px;
+
+        margin-right: 27px;
+      }
+
+      &--rules {
+        background-size: cover;
+
+        width: 193px;
+        height: 60px;
+      }
+    }
+
+    &__link {
+      font-size: 1.661em;
+    }
+  }
+}
