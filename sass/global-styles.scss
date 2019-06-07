@@ -19,8 +19,8 @@ html {
   overflow: hidden;
 }
 
-.body-index {
-  background-color: $bg-body;
+body {
+  background-color: transparent;
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
@@ -30,44 +30,23 @@ html {
 
   position: relative;
 
-  color: $text-primary;
   font-family: $primary-font;
   text-transform: uppercase;
 
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+}
 
-  background-image: url('../img/index-bg.jpg');
+.body-contest {
+  background-image: url('../img/bg-main.png');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-
-  .intro__description {
-    display: none;
-  }
 }
 
-.body-event {
-  background-color: $bg-body;
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0;
-
-  min-height: 100vh;
-  overflow-x: hidden;
-
-  position: relative;
-
-  color: $text-primary;
-  font-family: $primary-font;
-  text-transform: uppercase;
-
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-
-  background-image: url('../img/event-bg.jpg');
+.body-feedback {
+  background-image: url('../img/feedback-bg.png');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;

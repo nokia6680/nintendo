@@ -1,15 +1,23 @@
 @font-face {
-	font-family: 'Gagalin-Regular';
-	src: url('../fonts/Gagalin-Regular.eot');
-	src: local('☺'), url('../fonts/Gagalin-Regular.woff') format('woff'), url('../fonts/Gagalin-Regular.ttf') format('truetype'), url('../fonts/Gagalin-Regular.svg') format('svg');
+	font-family: 'Snowstorm Bold';
+	src: url('../fonts/Snowstorm Bold.eot');
+	src: local('☺'), url('../fonts/Snowstorm Bold.woff') format('woff'), url('../fonts/Snowstorm Bold.ttf') format('truetype'), url('../fonts/Snowstorm Bold.otf') format('opentype'), url('../fonts/Snowstorm Bold.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Peace Sans';
-	src: url('../fonts/Peace Sans.eot');
-	src: local('☺'), url('../fonts/Peace Sans.woff') format('woff'), url('../fonts/Peace Sans.ttf') format('truetype'), url('../fonts/Peace Sans.svg') format('svg');
+	font-family: 'Snowstorm Black';
+	src: url('../fonts/Snowstorm Black.eot');
+	src: local('☺'), url('../fonts/Snowstorm Black.woff') format('woff'), url('../fonts/Snowstorm Black.ttf') format('truetype'), url('../fonts/Snowstorm Black.otf') format('opentype'), url('../fonts/Snowstorm Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FiraSansExtraCondensed-Bold';
+	src: url('../fonts/FiraSansExtraCondensed-Bold.eot');
+	src: local('☺'), url('../fonts/FiraSansExtraCondensed-Bold.woff') format('woff'), url('../fonts/FiraSansExtraCondensed-Bold.ttf') format('truetype'), url('../fonts/FiraSansExtraCondensed-Bold.otf') format('opentype'), url('../fonts/FiraSansExtraCondensed-Bold.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

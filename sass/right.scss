@@ -1,0 +1,70 @@
+.right {
+  display: none;
+  /*Включается только на странице с активным блоком Feedback на мобильном*/
+  &--feedback {
+    @include flex-setting(column, center, center, nowrap);
+
+    .right__information {
+      @include flex-setting(column, flex-start, center, nowrap);
+      text-decoration: none;
+      border: 4px solid #000000;
+    }
+
+    .right__list {
+      @include flex-setting(row, flex-start, flex-end, nowrap);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      border-bottom: 4px solid #000000;
+    }
+
+    .right__item {
+      @include flex-setting(column, flex-end, center, nowrap);
+      width: 20%;
+      height: 60px;
+      padding-bottom: 5px;
+      border-right: 4px solid #000000;
+
+      &--1 {
+        order: 4;
+      }
+
+      &--2 {
+        order: 5;
+        border-right: none;
+      }
+
+      &--3 {
+        order: 1;
+      }
+
+      &--4 {
+        order: 2;
+      }
+
+      &--5 {
+        order: 3;
+      }
+    }
+
+    .right__image {
+      width: 100%;
+      width: 35px;
+    }
+
+    .right__description {
+      @include font-setting($secondary-font, 2em, normal, 400, $text-primary);
+      text-align: center;
+
+      background-color: #ffffff;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 0;
+
+      &--small {
+        font-size: 0.875em;
+      }
+    }
+  }
+}

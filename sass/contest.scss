@@ -1,0 +1,103 @@
+.contest {
+  @include flex-setting(column, flex-start, center, nowrap);
+
+  width: 100%;
+
+  &__wrap {
+    width: 300px;
+
+    border-top: 6px solid #000000;
+    border-left: 6px solid #000000;
+    border-right: 6px solid #000000;
+
+    padding: 5px;
+    padding-bottom: 0;
+
+    margin-bottom: 25px;
+
+    position: relative;
+
+    -webkit-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.2);
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 6px;
+      height: 6px;
+      background-color: #000000;
+
+      bottom: -6px;
+      left: -6px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 300px;
+      height: 6px;
+      background-color: #000000;
+
+      bottom: -12px;
+      left: -6px;
+
+      -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+      -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+    }
+  }
+
+  &__play {
+    width: 100%;
+    height: 156px;
+
+    position: relative;
+
+    border: 4px solid #000000;
+    background: linear-gradient(105deg,
+    rgba(90,153,199,1) 0%,
+    rgba(90,153,199,1) calc(13% - 2px),
+    rgba(247,202,0,1) 13%,
+    rgba(247,202,0,1) calc(26% - 2px),
+    rgba(233,90,130,1) 26%,
+    rgba(233,90,130,1) calc(39% - 2px),
+    rgba(90,153,199,1) 39%,
+    rgba(90,153,199,1) calc(52% - 2px),
+    rgba(247,202,0,1) 52%,
+    rgba(247,202,0,1) calc(65% - 2px),
+    rgba(233,90,130,1) 65%,
+    rgba(233,90,130,1) calc(78% - 2px),
+    rgba(90,153,199,1) 78%,
+    rgba(90,153,199,1) calc(91% - 2px),
+    rgba(247,202,0,1) 91%);
+
+    overflow: hidden;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 44px;
+    height: 49px;
+
+    cursor: pointer;
+
+    background-color: transparent;
+    background-image: url('../img/play-btn.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+  }
+}

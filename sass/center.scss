@@ -1,5 +1,4 @@
-.main {
-  @include container;
+.center {
   @include flex-setting(column, flex-start, center, nowrap);
 
   width: 100%;

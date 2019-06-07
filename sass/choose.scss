@@ -1,0 +1,5 @@
+.choose {
+  padding-top: 10px;
+
+  @include flex-setting(column, center, center, nowrap);
+}
