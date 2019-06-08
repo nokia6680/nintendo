@@ -1,0 +1,41 @@
+.log-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include flex-setting(column, flex-start, flex-start, nowrap);
+
+  width: 100%;
+
+  &__item {
+    @include flex-setting(column, flex-start, flex-start, nowrap);
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  &__input {
+    width: 100%;
+    border: 2px solid #000000;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    @include font-setting($alternate-font, 1.125em, normal, 400, $text-primary);
+    text-transform: uppercase;
+
+    cursor: text;
+    outline: none;
+  }
+
+  &__label {
+    @include font-setting($alternate-font, 1em, normal, 400, $text-primary);
+  }
+
+  &__error {
+    @include font-setting($alternate-font, 0.5em, normal, 400, $text-error);
+    margin-top: 3px;
+  }
+}

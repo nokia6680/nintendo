@@ -47,3 +47,46 @@ if (menuShow) {
     }
   });
 }
+
+/*Слайдер в попапе c заголовками*/
+$(document).ready(function() {
+  $('.title-slider').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    fade: false,
+    arrows: false,
+    draggable: false,
+    touchMove: false,
+    swipe: false
+  });
+});
+
+/*Слайдер в попапе c видео*/
+$(document).ready(function() {
+  $('.content-slider').slick({
+    asNavFor: '.slider',
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    fade: false,
+    arrows: false
+  });
+});
+
+/*Слайдер в попапе c описаниями*/
+$(document).ready(function() {
+  $('.description-slider').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    fade: false,
+    arrows: false,
+    draggable: false,
+    touchMove: false,
+    swipe: false
+  });
+});

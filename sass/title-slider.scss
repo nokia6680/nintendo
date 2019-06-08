@@ -1,0 +1,21 @@
+.title-slider {
+  width: 100%;
+  @include flex-setting(column, center, center, nowrap);
+
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  margin-bottom: 30px;
+
+  &__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__text {
+    @include font-setting($primary-font, 1.25em, normal, 400, $text-primary);
+  }
+}

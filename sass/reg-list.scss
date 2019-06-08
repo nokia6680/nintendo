@@ -1,0 +1,75 @@
+.reg-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include flex-setting(column, flex-start, flex-start, nowrap);
+
+  width: 100%;
+  margin-bottom: 15px;
+
+  &__item {
+    @include flex-setting(column, flex-start, flex-start, nowrap);
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  &__input {
+    width: 100%;
+    border: 2px solid #000000;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    @include font-setting($alternate-font, 1.125em, normal, 400, $text-primary);
+    text-transform: uppercase;
+
+    cursor: text;
+    outline: none;
+  }
+
+  &__label {
+    @include font-setting($alternate-font, 1em, normal, 400, $text-primary);
+
+    &--checkbox {
+      font-size: 0.75em;
+    }
+
+    &--link {
+      color: $text-primary;
+      text-decoration: none;
+
+      &:hover {
+        color: $social-hover;
+      }
+    }
+  }
+
+  &__error {
+    @include font-setting($alternate-font, 0.5em, normal, 400, $text-error);
+    margin-top: 3px;
+
+    &--pass {
+      margin-bottom: 10px;
+    }
+
+    &--required {
+      margin-left: 25px;
+    }
+  }
+
+  &__checkbox + label {
+    @include checkbox-default;
+  }
+
+  &__checkbox + label::before {
+    @include custom-checkbox;
+  }
+
+  &__checkbox:checked + label::after {
+    @include checkbox-checked;
+  }
+}

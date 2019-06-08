@@ -1,0 +1,52 @@
+.recover-form {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, flex-start, nowrap);
+
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &__label {
+    @include font-setting($alternate-font, 1em, normal, 400, $text-primary);
+  }
+
+  &__input {
+    width: 100%;
+    border: 2px solid #000000;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    @include font-setting($alternate-font, 1.125em, normal, 400, $text-primary);
+    text-transform: uppercase;
+
+    cursor: text;
+    outline: none;
+  }
+
+  &__error {
+    @include font-setting($alternate-font, 0.5em, normal, 400, $text-error);
+    margin-top: 3px;
+    margin-bottom: 10px;
+  }
+
+  &__submit {
+    align-self: center;
+    @include flex-setting(column, center, center, nowrap);
+    @include font-setting($alternate-font, 1.125em, normal, 400, $text-primary);
+
+    background-color: #8dc63f;
+    border: 2px solid #000000;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    text-transform: uppercase;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #ff6700;
+    }
+  }
+}

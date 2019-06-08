@@ -1,0 +1,26 @@
+.reg-form {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, center, nowrap);
+
+  padding-bottom: 20px;
+  background-color: #ffffff;
+
+  &__submit {
+    @include flex-setting(column, center, center, nowrap);
+    @include font-setting($alternate-font, 1.125em, normal, 400, $text-primary);
+
+    background-color: #8dc63f;
+    border: 2px solid #000000;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    text-transform: uppercase;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #ff6700;
+    }
+  }
+}

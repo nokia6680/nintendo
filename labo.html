@@ -3,19 +3,22 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Nintendo | Nickelodeon</title>
+	<title>Nintendo Labo | Nickelodeon</title>
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
 
-<body class="body-contest">
+<body class="body-labo">
 	<div class="wrapper">
 		<!--Page header-->
 		<header class="header">
@@ -68,91 +71,85 @@
 		<!--Page main part-->
 		<main class="main">
 			<!--Контентная область для страницы викторины-->
-			<div class="main__choose choose">
-				<!--Левая зона-->
-				<section class="choose__left left">
-					<!--Уведомление для юзера-->
-					<div class="left__information">
-						<!--для незарегистрированного-->
-						<p class="left__unregistered">Привет! Скорее регистрируйся, отвечай на вопросы и выиграй игровой набор Nintendo Labo!</p>
-						<!--для зарегистрированного-->
-						<div class="left__registered">
-							<b class="left__title">Привет, <span class="left__name">Алексей!</span></b>
-							<p class="left__answer">На этой неделе у тебя <span class="left__answer--count">5</span> правильных ответов</p>
-						</div>
-					</div>
-          <!--Изображение, меняется-->
-          <img class="left__image left__image--1" src="img/labo1.svg" alt="" />
-          <img class="left__image left__image--2" src="img/labo2.svg" alt="" />
-          <img class="left__image left__image--3" src="img/labo3.svg" alt="" />
-          <img class="left__image left__image--4" src="img/labo4.svg" alt="" />
-          <img class="left__image left__image--5" src="img/labo5.svg" alt="" />
-				</section>
-				<!--Центральная зона-->
-				<section class="choose__center center">
-          <!--Блок викторины-->
-          <div class="center__contest contest">
-            <div class="contest__wrap">
-              <div class="contest__play">
-                <button class="contest__btn" type="btn"></button>
-                <iframe class="contest__video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-            <!--Блок вопросов-->
-            <form class="contest__form contest-form" action="#" method="post">
-              <h2 class="contest-form__question">Что случилось с самым первым вариантом школьного проекта Кензи и Бэйб?</h2>
-              <ul class="contest-form__list form-list">
-                <li class="form-list__item">
-                  <input class="visually-hidden form-list__input" type="radio" name="answer-1" id="variant-1" value="variant-1" />
-                  <label class="form-list__label" for="variant-1">Ответ номер 1</label>
-                </li>
-                <li class="form-list__item">
-                  <input class="visually-hidden form-list__input" type="radio" name="answer-1" id="variant-2" value="variant-2" />
-                  <label class="form-list__label" for="variant-2">Ответ номер 2</label>
-                </li>
-                <li class="form-list__item">
-                  <input class="visually-hidden form-list__input" type="radio" name="answer-1" id="variant-3" value="variant-2" />
-                  <label class="form-list__label" for="variant-3">Ответ номер 3</label>
-                </li>
-              </ul>
-              <button class="contest-form__submit" type="submit">Отправить</button>
-            </form>
+			<div class="main__labo labo">
+        <!--Слайдер заголовков-->
+        <div class="labo__title slider title-slider" id="title-slider">
+          <!--Slide-->
+          <div class="title-slider__item">
+            <b class="title-slider__text">Заголовок видео 1</b>
           </div>
-          <!--Блок фидбека после ответа-->
-          <div class="center__feedback feedback" style="display:none;">
-            <div class="feedback__reaction">
-              <p class="feedback__text feedback__text--success">Отлично!  Это правильный ответ. Возвращайся завтра, чтобы ответить на следующий вопрос!</p>
-              <p class="feedback__text feedback__text--unsuccess" style="display: none;">Сегодня тебе не повезло. Но не расстраивайся, акция продолжается, и у тебя ещё будет шанс выиграть!</p>
+          <!--Slide-->
+          <div class="title-slider__item">
+            <b class="title-slider__text">Заголовок видео 2</b>
+          </div>
+          <!--Slide-->
+          <div class="title-slider__item">
+            <b class="title-slider__text">Заголовок видео 3</b>
+          </div>
+          <!--Slide-->
+          <div class="title-slider__item">
+            <b class="title-slider__text">Заголовок видео 4</b>
+          </div>
+          <!--Slide-->
+          <div class="title-slider__item">
+            <b class="title-slider__text">Заголовок видео 5</b>
+          </div>
+        </div>
+        <!--Слайдер видеоконтента-->
+        <div class="labo__content">
+          <div class="labo__slider slider content-slider" id="contest-slider">
+            <!--Slide-->
+            <div class="content-slider__item">
+              <button class="content-slider__btn" type="btn"></button>
+              <iframe class="content-slider__video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="feedback__information">
-              <p class="feedback__text">На этой неделе у тебя <span class="feedback__text--count">5</span> правильных ответов</p>
+            <!--Slide-->
+            <div class="content-slider__item">
+              <button class="content-slider__btn" type="btn"></button>
+              <iframe class="content-slider__video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!--Slide-->
+            <div class="content-slider__item">
+              <button class="content-slider__btn" type="btn"></button>
+              <iframe class="content-slider__video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!--Slide-->
+            <div class="content-slider__item">
+              <button class="content-slider__btn" type="btn"></button>
+              <iframe class="content-slider__video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!--Slide-->
+            <div class="content-slider__item">
+              <button class="content-slider__btn" type="btn"></button>
+              <iframe class="content-slider__video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-				</section>
-        <!--Правая зона-->
-        <section class="choose__right right">
-          <a class="right__information" href="labo.html" target="_self">
-            <!--Див с меняющимся контентом по релоаду-->
-            <ul class="right__list">
-              <li class="right__item right__item--1">
-                <img class="right__image right__image--1" src="img/labo-r1.svg" alt="" />
-              </li>
-              <li class="right__item right__item--2">
-                <img class="right__image right__image--2" src="img/labo-r2.svg" alt="" />
-              </li>
-              <li class="right__item right__item--3">
-                <img class="right__image right__image--3" src="img/labo-r3.svg" alt="" />
-              </li>
-              <li class="right__item right__item--4">
-                <img class="right__image right__image--4" src="img/labo-r4.svg" alt="" />
-              </li>
-              <li class="right__item right__item--5">
-                <img class="right__image right__image--5" src="img/labo-r5.svg" alt="" />
-              </li>
-            </ul>
-            <b class="right__description">Узнай больше <span class="right__description--small">о&nbsp;Nintendo&nbsp;Labo</span></b>
-          </a>
-        </section>
+          <div class="prev"></div>
+          <div class="next"></div>
+        </div>
+        <!--Слайдер описаний-->
+        <div class="labo__description slider description-slider" id="title-slider">
+          <!--Slide-->
+          <div class="description-slider__item">
+            <p class="description-slider__text">Lorem ipsum dolor sit amet, Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <!--Slide-->
+          <div class="description-slider__item">
+            <p class="description-slider__text">Lorem ipsum dolor sit amet, Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <!--Slide-->
+          <div class="description-slider__item">
+            <p class="description-slider__text">Lorem ipsum dolor sit amet, Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <!--Slide-->
+          <div class="description-slider__item">
+            <p class="description-slider__text">Lorem ipsum dolor sit amet, Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <!--Slide-->
+          <div class="description-slider__item">
+            <p class="description-slider__text">Lorem ipsum dolor sit amet, Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
 			</div>
 		</main>
 		<!--Page footer-->
@@ -194,6 +191,15 @@
 		</footer>
 	</div>
   <!--Регистрационные формы-->
+  <!--Форма выбора действия - вход или регистрация-->
+  <div class="popup-enter" style="display: none;">
+    <div class="popup-enter__wrapper">
+      <button class="popup-enter__close closer" type="button"></button>
+      <button class="popup-enter__btn popup-enter__btn--register" type="button">Регистрация</button>
+      <button class="popup-enter__btn popup-enter__btn--enter" type="button">Вход</button>
+      <a class="popup-enter__recovery" href="#">Забыл пароль?</a>
+    </div>
+  </div>
   <!--Форма регистрации-->
   <div class="popup-register" style="display: none;">
     <div class="popup-register__wrapper">
@@ -211,26 +217,26 @@
             <input class="reg-list__input" type="tel" name="tel" id="tel" />
             <span class="reg-list__error reg-list__error--tel">Ты забыл написать номер телефона!</span>
           </li>
-          <li class="reg-list__item reg-list__item--last">
+          <li class="reg-list__item">
             <label class="reg-list__label" for="pass">Придумай пароль:</label>
             <input class="reg-list__input" type="password" name="pass" id="pass" />
-            <span class="reg-list__error reg-list__error--pass">Ты забыл придумать пароль!</span>
+            <span class="reg-list__error reg-list__error--pass">Ты забыл написать номер телефона!</span>
           </li>
           <li class="reg-list__item reg-list__item--agreement">
             <input class="reg-list__checkbox reg-list__checkbox--agreement visually-hidden" type="checkbox" name="agree" id="agree" required checked />
             <label class="reg-list__label reg-list__label--checkbox reg-list__label--agreement" for="agree">Я согласен на <a class="reg-list__label--link" href="#" target="_blank">обработку персональных данных</a></label>
-            <span class="reg-list__error reg-list__error--required">Это поле должно быть отмечено!</span>
+            <span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
           </li>
           <li class="reg-list__item reg-list__item--policy">
             <input class="reg-list__checkbox reg-list__checkbox--policy visually-hidden" type="checkbox" name="policy" id="policy" required checked />
             <label class="reg-list__label reg-list__label--checkbox reg-list__label--policy" for="policy">Я согласен с <a class="reg-list__label--link" href="#" target="_blank">условиями проведения конкурсов</a></label>
-            <span class="reg-list__error reg-list__error--required">Это поле должно быть отмечено!</span>
+            <span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
           </li>
         </ul>
         <button class="reg-form__submit" type="submit">Отправить</button>
       </form>
       <div class="popup-register__bottom">
-        <b class="popup-register__text">Если ты уде зарегистрирован, <a class="popup-register__link" href="#" target="_self">Нажми сюда</a></b>
+        <b class="popup-register__text">Если ты уде зарегистрирован,<a class="popup-register__link" href="#" target="_self">Нажми сюда</a></b>
       </div>
     </div>
   </div>
@@ -278,31 +284,33 @@
 	<div class="popup-rules" style="display: none;">
 		<div class="popup-rules__wrapper">
 			<button class="popup-rules__close" type="button"></button>
-			<h3 class="popup-rules__title">Как участвовать?</h3>
-			<ul class="popup-rules__list">
+			<div class="popup-rules__body">
+				<h3 class="popup-rules__title">Как участвовать?</h3>
+				<ul class="popup-rules__list">
 					<li class="popup-rules__item">
-						<b class="popup-rules__nr popup-rules__nr--1">1</b>
+						<b class="popup-rules__nr">1</b>
 						<span class="popup-rules__text">Каждый день отвечай на новый вопрос</span>
 					</li>
 					<li class="popup-rules__item">
-						<b class="popup-rules__nr popup-rules__nr--2">2</b>
+						<b class="popup-rules__nr">2</b>
 						<span class="popup-rules__text">Собери 7 правильных ответов за неделю</span>
 					</li>
 					<li class="popup-rules__item">
-						<b class="popup-rules__nr popup-rules__nr--3">3</b>
+						<b class="popup-rules__nr">3</b>
 						<span class="popup-rules__text">Получи шанс выиграть набор Nintendo Labo!</span>
 					</li>
 				</ul>
+			</div>
 		</div>
 	</div>
 	<!--Попап с призами-->
-	<div class="popup-prize" style="display: none">
+	<div class="popup-prize" style="display: none;">
 		<div class="popup-prize__wrapper">
 			<button class="popup-prize__close" type="button"></button>
 			<div class="popup-prize__body">
         <h3 class="popup-prize__title">Призы</h3>
-				<img class="popup-prize__img" src="img/prize-bg.png" alt="Nintendo Labo Variety Kit" />
-				<p class="popup-prize__description">Каждую неделю, среди тех кто ответит&nbsp;правильно&nbsp;на&nbsp;все 7 вопросов, мы&nbsp;будем&nbsp;разыгрывать&nbsp;набор &laquo;Nintendo&nbsp;Switch&nbsp;+&nbsp;Labo&nbsp;Variety&nbsp;Kit&raquo;!</p>
+				<img class="popup-prize__img" src="img/prize.png" alt="Nintendo Labo Variety Kit" />
+				<p class="popup-prize__description">Каждую неделю, среди тех кто ответит правильно на все 7 вопросов, мы будем разыгрывать набор &laquo;Nintendo Switch + Labo Variety Kit&raquo;!</p>
 			</div>
 		</div>
 	</div>
@@ -323,7 +331,7 @@
       <ul class="popup-winner__list">
         <li class="popup-winner__item">
           <span class="popup-winner__date">17.06 - 23.06</span>
-          <b class="popup-winner__note">Победитель этой недели:</b>
+          <b class="popup-winner__title">Победитель этой недели:</b>
         </li>
         <li class="popup-winner__item">
           <b class="popup-winner__name">Иванов Иван</b>

@@ -43,6 +43,48 @@
   }
 }
 
+@mixin checkbox-default {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+
+  position: relative;
+  padding-left: 25px;
+}
+
+@mixin custom-checkbox {
+  position: absolute;
+  content: "";
+  display: block;
+
+  width: 20px;
+  height: 20px;
+
+  top: -4px;
+  left: 0;
+
+  border: 2px solid #000000;
+  background-color: transparent;
+}
+
+@mixin checkbox-checked {
+  position: absolute;
+  content: "";
+  display: block;
+
+  width: 16px;
+  height: 16px;
+
+  top: -2px;
+  left: 2px;
+
+  background-image: url('../img/check-tick.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: transparent;
+}
+
 @mixin radio-default {
   display: inline-block;
   vertical-align: middle;

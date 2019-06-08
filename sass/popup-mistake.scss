@@ -16,19 +16,15 @@
 
   &__wrapper {
     width: 300px;
-    height: 132px;
 
     padding-top: 11px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 11px;
 
-    @include flex-setting(column, flex-start, center, nowrap);
+    border: 2px solid #000000;
 
-    background-image: url('../img/popup-mistake-frame.png');
-    background-size: 300px 132px;
-    background-position: top center;
-    background-repeat: no-repeat;
+    @include flex-setting(column, flex-start, center, nowrap);
 
     position: relative;
 
@@ -38,9 +34,7 @@
   }
 
   &__close {
-    @extend .popup-prize__close;
-
-    z-index: 1003;
+    @extend .popup-login__close;
   }
 
   &__body {
@@ -49,10 +43,7 @@
     width: 100%;
     height: 100%;
 
-    background-image: url('../img/popup-mistake-bg.png');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #ffffff;
 
     position: relative;
 
@@ -62,7 +53,8 @@
   }
 
   &__description {
-    @include font-setting($primary-font, 1.25em, normal,400, $text-primary);
+    @include font-setting($alternate-font, 1.25em, normal,400, $text-primary);
+    width: 200px;
     text-align: center;
   }
 }

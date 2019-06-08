@@ -1,0 +1,56 @@
+.log-form {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, center, nowrap);
+
+  padding-bottom: 20px;
+  background-color: #ffffff;
+
+  &__title {
+    width: 100%;
+    margin: 0;
+
+    @include font-setting($alternate-font, 1.25em, normal, 400, $text-primary);
+
+    background-image: url('../img/header-pattern.png');
+    background-repeat: repeat;
+
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-bottom: 2px solid #000000;
+  }
+
+  &__recovery {
+    @include font-setting($alternate-font, 0.75em, normal, 400, $text-primary);
+    text-decoration: underline;
+    align-self: flex-start;
+
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: #ff6700;
+    }
+  }
+
+  &__submit {
+    @include flex-setting(column, center, center, nowrap);
+    @include font-setting($alternate-font, 1.125em, normal, 400, $text-primary);
+
+    background-color: #8dc63f;
+    border: 2px solid #000000;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    text-transform: uppercase;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #ff6700;
+    }
+  }
+}

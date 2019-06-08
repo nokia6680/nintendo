@@ -2,126 +2,93 @@
   width: 100%;
   margin: 0;
   padding: 0;
+
   list-style: none;
+  position: absolute;
 
-  &__link {
-    width: 100%;
-    height: 100%;
+  top: -3000px;
+  transition: 0.2s ease-in-out;
 
-    padding-left: 5px;
-    padding-right: 5px;
+  @include flex-setting(column, flex-start, center, nowrap);
 
-    @include flex-setting(column, center, center, nowrap);
-    @include font-setting($secondary-font, 1em, normal, 400, $text-primary);
+  background-image: url("../img/header-pattern.png");
+  background-repeat: repeat;
+  background-size: 50px 50px;
+  background-position: left top;
 
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  &--mobile {
-    @include flex-setting(row, center, center, nowrap);
-
-    height: 51px;
-  }
-
-  &--desktop {
-    position: absolute;
+  &--active {
     top: 51px;
-
-    @include flex-setting(column, flex-start, center, nowrap);
-
-    background-image: url('../img/header-pattern.png');
-    background-repeat: repeat;
-    background-size: 50px 50px;
-    background-position: left top;
-    display: none;
-
-    .nav-list__item {
-      border: none;
-      border-top: 2px solid #000000;
-
-      width: 100%;
-      background-color: transparent;
-
-      padding-top: 10px;
-      padding-bottom: 10px;
-
-      &:hover,
-      &:active {
-        background-color: #ffffff;
-      }
-
-      &--register {
-        display: none;
-      }
-
-      &--exit {
-        display: none;
-      }
-
-      &--nintendo {
-        order: 1;
-      }
-
-      &--howto {
-        order: 2;
-      }
-
-      &--prize {
-        order: 3;
-      }
-
-      &--winner {
-        order: 4;
-      }
-
-      &--main {
-        order: 5;
-        border-bottom: 2px solid #000000;
-      }
-    }
-
-    .nav-list__link {
-      font-size: 1.5em;
-    }
+    transition: 0.2s ease-in-out;
   }
 
   &__item {
-    width: auto;
-    height: 100%;
+    border: none;
+    border-top: 2px solid #000000;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-    border-left: 2px solid #000000;
+    &:active,
+    &:hover {
+      background-color: #ffffff;
+    }
 
-    @include flex-setting(column, center, center, nowrap);
-
-    &--logout {
+    &--register {
       display: none;
     }
+
+    &--exit {
+      display: none;
+    }
+
+    &--nintendo {
+      order: 1;
+    }
+
+    &--howto {
+      order: 2;
+    }
+
+    &--prize {
+      order: 3;
+    }
+
+    &--winner {
+      order: 4;
+    }
+
+    &--main {
+      order: 5;
+      border-bottom: 2px solid #000000;
+    }
+  }
+
+  &__link {
+    @include flex-setting(column, center, center, nowrap);
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 }
-
 @media only screen and (min-width: $mobile) {
   .nav-list {
     &__link {
       font-size: 1.125em;
-
       padding-top: 14px;
       padding-bottom: 10px;
     }
   }
 }
-
 @media only screen and (min-width: $smt) {
   .nav-list {
     &__link {
       font-size: 3em;
-
       padding-top: 18px;
       padding-bottom: 18px;
     }
   }
 }
-
 @media only screen and (min-width: $tablet) {
   .nav-list {
     &__link {
@@ -130,22 +97,19 @@
     }
   }
 }
-
 @media only screen and (min-width: $laptop) {
   .nav-list {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     width: auto;
 
     &__item {
       width: auto;
       @include flex-setting(column, center, center, nowrap);
-
-      box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.5);
-      -webkit-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.5);
-      -moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.5);
+      box-shadow: 3px 3px 0 0 rgba(0,0,0,0.5);
+      -webkit-box-shadow: 3px 3px 0 0 rgba(0,0,0,0.5);
+      -moz-box-shadow: 3px 3px 0 0 rgba(0,0,0,0.5);
 
       &::after,
       &::before {
@@ -157,52 +121,44 @@
       }
 
       &--prize {
-        background-image: url('../img/menu-prize-bg.png');
+        background-image: url("../img/menu-prize-bg.png");
         background-size: 89px 34px;
         background-repeat: no-repeat;
         background-position: top center;
-
         width: 89px;
         height: 34px;
-
         margin-right: 20px;
       }
 
       &--rules {
-        background-image: url('../img/menu-rules-bg.png');
+        background-image: url("../img/menu-rules-bg.png");
         background-size: 109px 34px;
         background-repeat: no-repeat;
         background-position: top center;
-
         width: 109px;
         height: 34px;
       }
     }
 
     &__link {
-      padding-top: 0px;
-      padding-bottom: 0px;
-
+      padding-top: 0;
+      padding-bottom: 0;
       font-size: 1em;
     }
   }
 }
-
 @media only screen and (min-width: $laptop-hd) {
   .nav-list {
     &__item {
       &--prize {
         background-size: 118px 45px;
-
         width: 118px;
         height: 45px;
-
         margin-right: 20px;
       }
 
       &--rules {
         background-size: 145px 45px;
-
         width: 145px;
         height: 45px;
       }
@@ -213,22 +169,18 @@
     }
   }
 }
-
 @media only screen and (min-width: $laptop-hd) {
   .nav-list {
     &__item {
       &--prize {
         background-size: cover;
-
         width: 156px;
         height: 60px;
-
         margin-right: 27px;
       }
 
       &--rules {
         background-size: cover;
-
         width: 193px;
         height: 60px;
       }
