@@ -121,11 +121,42 @@
   }
 }
 
-@media only screen and (min-width: $hdm) {
+@media only screen and (min-width: $mobile) {
   .popup-rules {
-    &__close {
-      top: -35px;
-      right: -35px;
+    &__wrapper {
+      width: 355px;
+    }
+
+    &__title {
+      font-size: 1.375em;
+
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    &__item {
+      padding-top: 7px;
+      padding-bottom: 7px;
+
+      &::after {
+        width: 360px;
+        left: -5px;
+      }
+    }
+
+    &__nr {
+      font-size: 1.375em;
+
+      margin-bottom: 7px;
+
+      min-width: 35px;
+      height: 35px;
+    }
+
+    &__text {
+      font-size: 1em;
+
+      width: 250px;
     }
   }
 }

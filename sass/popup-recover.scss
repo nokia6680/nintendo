@@ -58,3 +58,26 @@
     @include font-setting($alternate-font, 0.75em, normal, 400, #444a58);
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .popup-recover {
+    &__wrapper {
+      width: 355px;
+    }
+
+    &__title {
+      font-size: 1.375em;
+
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    &__subtitle {
+      width: 80%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      font-size: 0.875em;
+    }
+  }
+}

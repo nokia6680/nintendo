@@ -22,8 +22,6 @@
     padding-top: 6px;
     padding-bottom: 6px;
     margin: 0;
-
-    display: none;
   }
 
   &__registered {
@@ -42,7 +40,9 @@
   }
 
   &__answer {
-    @include font-setting($alternate-font, 0.7em, normal, 400, $text-primary);
+    @include font-setting($primary-font, 0.7em, normal, 400, $text-primary);
+    width: 100%;
+
     text-align: center;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -55,5 +55,34 @@
 
   &__image {
     display: none;
+  }
+}
+
+@media only screen and (min-width: $mobile) {
+  .left {
+    &__information {
+      border: 4px solid #000000;
+      margin-bottom: 15px;
+    }
+
+    &__unregistered {
+      font-size: 1em;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    &__title {
+      font-size: 1em;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    &__answer {
+      font-size: 0.875em;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
   }
 }

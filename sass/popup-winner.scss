@@ -94,3 +94,26 @@
     margin-bottom: 20px;
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .popup-winner {
+    &__wrapper {
+      width: 355px;
+    }
+
+    &__title {
+      font-size: 1.375em;
+
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    &__item {
+
+      &::after {
+        width: 360px;
+        left: -5px;
+      }
+    }
+  }
+}

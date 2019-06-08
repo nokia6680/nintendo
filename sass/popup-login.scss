@@ -85,3 +85,20 @@
     }
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .popup-login {
+    &__wrapper {
+      width: 355px;
+    }
+
+    &__bottom {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    &__text {
+      font-size: 0.875em;
+    }
+  }
+}

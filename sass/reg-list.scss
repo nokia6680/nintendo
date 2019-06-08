@@ -73,3 +73,40 @@
     @include checkbox-checked;
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .reg-list {
+    margin-bottom: 25px;
+    padding-top: 10px;
+
+    &__item {
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+
+    &__input {
+      font-size: 1.25em;
+    }
+
+    &__label {
+      font-size: 1.125em;
+
+      &--checkbox {
+        font-size: 0.875em;
+      }
+    }
+
+    &__error {
+      font-size: 0.6em;
+      margin-top: 5px;
+
+      &--pass {
+        margin-bottom: 10px;
+      }
+
+      &--required {
+        margin-left: 25px;
+      }
+    }
+  }
+}

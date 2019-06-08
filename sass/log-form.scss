@@ -54,3 +54,24 @@
     }
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .log-form {
+    padding-bottom: 30px;
+
+    &__title {
+      font-size: 1.375em;
+
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    &__recovery {
+      font-size: 0.875em;
+    }
+
+    &__submit {
+      font-size: 1.25em;
+    }
+  }
+}

@@ -50,3 +50,27 @@
     }
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .recover-form {
+    padding-bottom: 25px;
+
+    &__label {
+      font-size: 1.125em;
+    }
+
+    &__input {
+      font-size: 1.25em;
+    }
+
+    &__error {
+      font-size: 0.6em;
+      margin-bottom: 15px;
+      margin-top: 5px;
+    }
+
+    &__submit {
+      font-size: 1.25em;
+    }
+  }
+}

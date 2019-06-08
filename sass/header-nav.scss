@@ -1,5 +1,5 @@
 .header-nav {
-  @include flex-setting(row, space-between, center, nowrap);
+  @include flex-setting(row, flex-end, center, nowrap);
 
   height: 100%;
   width: 100%;
@@ -9,6 +9,9 @@
     height: 34px;
 
     margin-left: 10px;
+    margin-right: auto;
+
+    transition: 0.2s ease-in;
   }
 
   &__link {
@@ -44,6 +47,28 @@
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-color: #ffffff;
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile) {
+  .header-nav {
+    &__logo {
+      width: 90px;
+      height: 44px;
+
+      margin-left: 10px;
+      transition: 0.2s ease-in;
+    }
+
+    &__toggle {
+      background-size: 36px 33px;
+
+      margin-right: 10px;
+
+      &--active {
+        background-size: 33px 33px;
+      }
     }
   }
 }

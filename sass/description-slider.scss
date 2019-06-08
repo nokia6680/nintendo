@@ -11,3 +11,15 @@
     text-transform: uppercase;
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .description-slider {
+    &__item {
+      width: 335px;
+    }
+
+    &__text {
+      font-size: 1em;
+    }
+  }
+}

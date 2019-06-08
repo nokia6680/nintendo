@@ -107,6 +107,37 @@
   }
 }
 
+@media only screen and (min-width: $mobile) {
+  .popup-prize {
+    &__wrapper {
+      width: 355px;
+    }
+
+    &__title {
+      font-size: 1.375em;
+
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+
+    &__body {
+      &::after {
+        width: 107px;
+        height: 53px;
+
+        top: 40%;
+      }
+    }
+
+    &__description {
+      font-size: 1em;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+}
+
 @media only screen and (min-width: $smt) {
   .popup-prize {
     &__wrapper {

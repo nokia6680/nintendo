@@ -30,6 +30,7 @@
 
   &__submit {
     position: absolute;
+    width: 148px;
     height: 36px;
 
     bottom: -50px;
@@ -37,44 +38,42 @@
 
     transform: translateX(-50%);
 
-    background-color: #8dc63f;
-
-    border: 3px solid #000000;
-    border-right: none;
+    background-image: url('../img/submit-bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
 
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
 
+    border: none;
+    background-color: transparent;
+
     @include font-setting($alternate-font, 1em, normal, 400, $text-primary);
     @include flex-setting(column, center, center, nowrap);
 
     display: inline-flex;
     text-transform: uppercase;
+  }
+}
 
-    &::before {
-      position: absolute;
-      content: '';
-      right: -18px;
-      top: -3px;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 18px 0 18px 18px;
-      border-color: transparent transparent transparent #000000;
+@media only screen and (min-width: $mobile) {
+  .contest-form {
+    width: 335px;
+
+    margin-bottom: 55px;
+
+    &__question {
+      font-size: 1em;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
 
-    &::after {
-      position: absolute;
-      content: '';
-      right: -14px;
-      top: 0px;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 15px 0 15px 15px;
-      border-color: transparent transparent transparent #8ec63f;
+    &__submit {
+      font-size: 1.25em;
     }
   }
 }

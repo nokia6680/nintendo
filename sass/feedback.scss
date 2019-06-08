@@ -33,3 +33,17 @@
     background-color: #ffffff;
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .feedback {
+    padding-top: 20px;
+    margin-bottom: 30px;
+
+    &__text {
+      font-size: 1.125em;
+
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+}

@@ -78,3 +78,27 @@
     }
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .popup-register {
+    &__wrapper {
+      width: 355px;
+    }
+
+    &__title {
+      font-size: 1.375em;
+
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    &__bottom {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    &__text {
+      font-size: 1em;
+    }
+  }
+}

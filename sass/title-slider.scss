@@ -19,3 +19,19 @@
     @include font-setting($primary-font, 1.25em, normal, 400, $text-primary);
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .title-slider {
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    margin-bottom: 30px;
+
+    &__text {
+      font-size: 1.375em;
+    }
+  }
+}

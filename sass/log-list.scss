@@ -39,3 +39,24 @@
     margin-top: 3px;
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .log-list {
+    &__item {
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+
+    &__input {
+      font-size: 1.25em;
+    }
+
+    &__label {
+      font-size: 1.125em;
+    }
+
+    &__error {
+      font-size: 0.6em;
+    }
+  }
+}

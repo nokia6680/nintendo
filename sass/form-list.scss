@@ -56,3 +56,22 @@
     @include radio-checked;
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .form-list {
+    &__item {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-left: 7px;
+
+      &::after {
+        width: 355px;
+        left: -5px;
+      }
+    }
+
+    &__label {
+      font-size: 1em;
+    }
+  }
+}

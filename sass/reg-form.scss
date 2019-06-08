@@ -24,3 +24,13 @@
     }
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .reg-form {
+    padding-bottom: 30px;
+
+    &__submit {
+      font-size: 1.25em;
+    }
+  }
+}

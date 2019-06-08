@@ -34,3 +34,11 @@
     text-transform: uppercase;
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .nav-controls {
+    &__link {
+      font-size: 1em;
+    }
+  }
+}

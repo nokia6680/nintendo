@@ -74,26 +74,21 @@
 @media only screen and (min-width: $mobile) {
   .nav-list {
     &__link {
-      font-size: 1.125em;
-      padding-top: 14px;
-      padding-bottom: 10px;
+      font-size: 1.625em;
     }
   }
 }
 @media only screen and (min-width: $smt) {
   .nav-list {
     &__link {
-      font-size: 3em;
-      padding-top: 18px;
-      padding-bottom: 18px;
+
     }
   }
 }
 @media only screen and (min-width: $tablet) {
   .nav-list {
     &__link {
-      padding-top: 20px;
-      padding-bottom: 20px;
+
     }
   }
 }

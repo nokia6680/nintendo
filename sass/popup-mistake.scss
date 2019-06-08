@@ -59,6 +59,19 @@
   }
 }
 
+@media only screen and (min-width: $mobile) {
+  .popup-mistake {
+    &__wrapper {
+      width: 355px;
+    }
+
+    &__description {
+      font-size: 1.375em;
+      width: 250px;
+    }
+  }
+}
+
 @media only screen and (min-width: $smt) {
   .popup-mistake {
     &__wrapper {

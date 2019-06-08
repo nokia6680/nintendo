@@ -101,3 +101,41 @@
     height: 100%;
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .contest {
+    &__wrap {
+      width: 355px;
+
+      padding: 7px;
+      padding-bottom: 0;
+
+      margin-bottom: 25px;
+
+      &::before {
+        width: 6px;
+        height: 6px;
+
+        bottom: -6px;
+        left: -6px;
+      }
+
+      &::after {
+        width: 355px;
+        height: 6px;
+
+        bottom: -12px;
+        left: -6px;
+      }
+    }
+
+    &__play {
+      height: 185px;
+    }
+
+    &__btn {
+      width: 57px;
+      height: 64px;
+    }
+  }
+}

@@ -2,4 +2,12 @@
   padding-top: 10px;
 
   @include flex-setting(column, center, center, nowrap);
+
+  width: 100%;
+}
+
+@media only screen and (min-width: $mobile) {
+  .choose {
+    padding-top: 20px;
+  }
 }

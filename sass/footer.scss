@@ -1,14 +1,17 @@
 .footer {
   width: 100%;
-  @include container;
 
   margin-bottom: 0;
   margin-top: auto;
 
   background-color: $bg-footer;
 
+
   &__wrapper {
     @include flex-setting(row, space-between, center, nowrap);
+    padding-left: 10px;
+    padding-right: 10px;
+
     width: 100%;
   }
 
@@ -27,6 +30,19 @@
     height: auto;
   }
 }
+
+@media only screen and (min-width: $mobile) {
+  .footer {
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    &__logo {
+      width: 130px;
+      height: 18px;
+    }
+  }
+}
+
 
 @media only screen and (min-width: $smt) {
 
