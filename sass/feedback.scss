@@ -47,3 +47,29 @@
     }
   }
 }
+
+
+@media only screen and (min-width: $mobile) {
+  .feedback {
+    padding-top: 20px;
+    margin-bottom: 47px;
+
+    &__reaction {
+      width: 510px;
+      border-width: 6px;
+      margin-bottom: 42px;
+    }
+
+    &__information {
+      border-width: 6px;
+      width: 392px;
+    }
+
+    &__text {
+      font-size: 1.625em;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}

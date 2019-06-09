@@ -72,7 +72,37 @@ $(document).ready(function() {
     slidesToScroll: 1,
     dots: true,
     fade: false,
-    arrows: false
+    arrows: false,
+    prevArrow: '<div class="prev"></div>',
+    nextArrow: '<div class="next"></div>',
+    responsive: [
+    {
+      breakpoint: 9999,
+      settings: {
+        asNavFor: '.slider',
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        fade: false,
+        arrows: true,
+        prevArrow: '<div class="prev"></div>',
+        nextArrow: '<div class="next"></div>',
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        asNavFor: '.slider',
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        fade: false,
+        arrows: false
+      }
+    }
+  ]
   });
 });
 

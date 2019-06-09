@@ -139,3 +139,43 @@
     }
   }
 }
+
+@media only screen and (min-width: $tablet) {
+  .contest {
+    &__wrap {
+      width: 519px;
+
+      padding: 9px;
+      border-width: 12px;
+      padding-bottom: 0;
+
+      margin-bottom: 30px;
+
+      &::before {
+        width: 12px;
+        height: 9px;
+
+        bottom: -9px;
+        left: -12px;
+      }
+
+      &::after {
+        width: 519px;
+        height: 12px;
+
+        bottom: -21px;
+        left: -12px;
+      }
+    }
+
+    &__play {
+      border-width: 6px;
+      height: 261px;
+    }
+
+    &__btn {
+      width: 88px;
+      height: 99px;
+    }
+  }
+}

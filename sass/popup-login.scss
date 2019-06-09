@@ -102,3 +102,36 @@
     }
   }
 }
+
+@media only screen and (min-width: $tablet) {
+  .popup-login {
+    &__wrapper {
+      width: 488px;
+      border-width: 6px;
+    }
+
+    &__close {
+      width: 53px;
+      height: 53px;
+
+      background-size: 30px 30px;
+      border-width: 4px;
+
+      top: -55px;
+      right: -55px;
+    }
+
+    &__bottom {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 1.5em;
+    }
+
+    &__link {
+      border-width: 4px;
+    }
+  }
+}

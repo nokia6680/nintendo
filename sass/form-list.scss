@@ -75,3 +75,22 @@
     }
   }
 }
+
+@media only screen and (min-width: $tablet) {
+  .form-list {
+    &__item {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 13px;
+
+      &::after {
+        width: 500px;
+        left: -5px;
+      }
+    }
+
+    &__label {
+      font-size: 1.375em;
+    }
+  }
+}

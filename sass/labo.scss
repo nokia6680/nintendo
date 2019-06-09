@@ -81,3 +81,33 @@
     }
   }
 }
+
+@media only screen and (min-width: $tablet) {
+  .labo {
+    &__content {
+      width: 519px;
+
+      padding: 11px;
+      border-width: 12px;
+      padding-bottom: 0;
+
+      margin-bottom: 100px;
+
+      &::before {
+        width: 12px;
+        height: 9px;
+
+        bottom: -9px;
+        left: -12px;
+      }
+
+      &::after {
+        width: 519px;
+        height: 12px;
+
+        bottom: -21px;
+        left: -12px;
+      }
+    }
+  }
+}

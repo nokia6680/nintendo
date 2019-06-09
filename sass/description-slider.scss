@@ -1,6 +1,14 @@
 .description-slider {
   width: 100%;
 
+  &:not(.slick-initialized) {
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
   &__item {
     width: 280px;
   }
@@ -20,6 +28,21 @@
 
     &__text {
       font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .description-slider {
+    width: 388px;
+
+    &__item {
+      width: 388px;
+    }
+
+    &__text {
+      width: 388px;
+      font-size: 1.5em;
     }
   }
 }

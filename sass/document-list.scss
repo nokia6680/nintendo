@@ -27,3 +27,11 @@
     }
   }
 }
+
+@media only screen and (min-width: $tablet) {
+  .document-list {
+    &__link {
+      font-size: 0.875em;
+    }
+  }
+}

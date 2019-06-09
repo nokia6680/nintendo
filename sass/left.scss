@@ -86,3 +86,34 @@
     }
   }
 }
+
+@media only screen and (min-width: $tablet) {
+  .left {
+    &__information {
+      width: 604px;
+      transition: 0.3s ease-in;
+      border-width: 6px;
+    }
+
+    &__unregistered {
+      font-size: 1.375em;
+
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &__title {
+      font-size: 1.625em;
+
+      padding-top: 5px;
+      padding-bottom: 4px;
+      border-width: 6px;
+    }
+
+    &__answer {
+      font-size: 1.375em;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+  }
+}

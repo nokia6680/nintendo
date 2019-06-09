@@ -72,3 +72,29 @@
     }
   }
 }
+
+@media only screen and (min-width: $tablet) {
+  .header-nav {
+    &__logo {
+      width: 139px;
+      height: 68px;
+
+      margin-left: 40px;
+      transition: 0.2s ease-in;
+    }
+
+    &__toggle {
+      width: 104px;
+      height: 84px;
+      background-size: 55px 51px;
+
+      margin-right: 40px;
+
+      border-width: 4px;
+
+      &--active {
+        background-size: 51px 51px;
+      }
+    }
+  }
+}

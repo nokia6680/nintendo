@@ -10,6 +10,14 @@
 
   margin-bottom: 30px;
 
+  &:not(.slick-initialized) {
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
   &__item {
     width: 100%;
     text-align: center;
@@ -32,6 +40,23 @@
 
     &__text {
       font-size: 1.375em;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .title-slider {
+    width: 488px;
+
+    border-width: 6px;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    margin-bottom: 33px;
+
+    &__text {
+      font-size: 2em;
     }
   }
 }

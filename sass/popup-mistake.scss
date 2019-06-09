@@ -62,7 +62,7 @@
 @media only screen and (min-width: $mobile) {
   .popup-mistake {
     &__wrapper {
-      width: 355px;
+      width: 322px;
     }
 
     &__description {
@@ -72,17 +72,28 @@
   }
 }
 
-@media only screen and (min-width: $smt) {
+@media only screen and (min-width: $tablet) {
   .popup-mistake {
     &__wrapper {
-      width: 411px;
-      height: 181px;
-
-      background-size: contain;
+      width: 322px;
+      border-width: 6px;
+      padding: 0;
     }
 
     &__description {
       font-size: 1.875em;
+      width: 250px;
+    }
+
+    &__close {
+      width: 53px;
+      height: 53px;
+
+      background-size: 30px 30px;
+      border-width: 4px;
+
+      top: -55px;
+      right: -55px;
     }
   }
 }

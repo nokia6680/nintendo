@@ -44,8 +44,21 @@
 }
 
 
-@media only screen and (min-width: $smt) {
+@media only screen and (min-width: $tablet) {
+  .footer {
+    padding-top: 4px;
+    padding-bottom: 4px;
 
+    &__wrapper {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &__logo {
+      width: 200px;
+      height: 28px;
+    }
+  }
 }
 
 @media only screen and (min-width: $laptop) {

@@ -68,3 +68,45 @@
     }
   }
 }
+
+@media only screen and (min-width: $tablet) {
+  .right {
+    /*Включается только на странице с активным блоком Feedback на мобильном*/
+    &--feedback {
+      width: 557px;
+      @include flex-setting(column, center, center, nowrap);
+
+      .right__information {
+        border: 6px solid #000000;
+      }
+
+      .right__list {
+        border-bottom: 6px solid #000000;
+      }
+
+      .right__item {
+        height: 134px;
+        border-right: 6px solid #000000;
+
+        &--2 {
+          order: 5;
+          border-right: none;
+        }
+      }
+
+      .right__image {
+        width: 79px;
+      }
+
+      .right__description {
+        font-size: 3.7em;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &--small {
+          font-size: 0.875em;
+        }
+      }
+    }
+  }
+}
