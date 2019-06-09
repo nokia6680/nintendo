@@ -3,3 +3,9 @@
 
   width: 100%;
 }
+
+@media only screen and (min-width: $laptop) {
+  .center {
+    width: 400px;
+  }
+}

@@ -2,15 +2,11 @@
   width: 100%;
   margin: 0;
   padding: 0;
-
   list-style: none;
   position: absolute;
-
   top: -3000px;
   transition: 0.2s ease-in-out;
-
   @include flex-setting(column, flex-start, center, nowrap);
-
   background-image: url("../img/header-pattern.png");
   background-repeat: repeat;
   background-size: 50px 50px;
@@ -78,7 +74,6 @@
     }
   }
 }
-
 @media only screen and (min-width: $tablet) {
   .nav-list {
     &--active {
@@ -98,95 +93,95 @@
 }
 @media only screen and (min-width: $laptop) {
   .nav-list {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
+    &--active {
+      top: 63px;
+    }
 
     &__item {
-      width: auto;
-      @include flex-setting(column, center, center, nowrap);
-      box-shadow: 3px 3px 0 0 rgba(0,0,0,0.5);
-      -webkit-box-shadow: 3px 3px 0 0 rgba(0,0,0,0.5);
-      -moz-box-shadow: 3px 3px 0 0 rgba(0,0,0,0.5);
-
-      &::after,
-      &::before {
-        display: none;
-      }
-
-      &--howto {
-        display: none;
-      }
-
-      &--prize {
-        background-image: url("../img/menu-prize-bg.png");
-        background-size: 89px 34px;
-        background-repeat: no-repeat;
-        background-position: top center;
-        width: 89px;
-        height: 34px;
-        margin-right: 20px;
-      }
-
-      &--rules {
-        background-image: url("../img/menu-rules-bg.png");
-        background-size: 109px 34px;
-        background-repeat: no-repeat;
-        background-position: top center;
-        width: 109px;
-        height: 34px;
-      }
+      border-width: 4px;
     }
 
     &__link {
+      font-size: 2.5em;
+      padding-top: 8px;
+      padding-bottom: 9px;
+    }
+  }
+}
+@media only screen and (min-width: $laptop-hd) {
+  .nav-list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    top: auto;
+    width: auto;
+    height: 88px;
+    background-color: transparent;
+
+    &__item {
+      border-top: none;
+      width: auto;
+      height: 88px;
+      border-left: 2px solid #000000;
       padding-top: 0;
       padding-bottom: 0;
-      font-size: 1em;
-    }
-  }
-}
-@media only screen and (min-width: $laptop-hd) {
-  .nav-list {
-    &__item {
-      &--prize {
-        background-size: 118px 45px;
-        width: 118px;
-        height: 45px;
-        margin-right: 20px;
+      background-color: transparent;
+
+      &--nintendo {
+        display: none;
       }
 
-      &--rules {
-        background-size: 145px 45px;
-        width: 145px;
-        height: 45px;
-      }
-    }
-
-    &__link {
-      font-size: 1.25em;
-    }
-  }
-}
-@media only screen and (min-width: $laptop-hd) {
-  .nav-list {
-    &__item {
-      &--prize {
-        background-size: cover;
-        width: 156px;
-        height: 60px;
-        margin-right: 27px;
+      &--register {
+        display: inline-flex;
       }
 
-      &--rules {
-        background-size: cover;
-        width: 193px;
-        height: 60px;
+      &--exit {
+        display: none;
+      }
+
+      &--main {
+        display: none;
+      }
+
+      &--winner {
+        border-right: 2px solid #000000;
       }
     }
 
     &__link {
-      font-size: 1.661em;
+      font-size: 1.438em;
+      font-family: $secondary-font;
+      width: 100%;
+      height: 88px;
+      padding: 0 25px;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        background-color: #ffffff;
+
+        &::after {
+          display: block;
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 8px;
+          left: 0;
+          bottom: 0;
+          background: linear-gradient(105deg, rgba(90,153,199,1) 0%, rgba(90,153,199,1) calc(10% - 2px), rgba(247,202,0,1) 10%, rgba(247,202,0,1) calc(20% - 2px), rgba(233,90,130,1) 20%, rgba(233,90,130,1) calc(30% - 2px), rgba(90,153,199,1) 30%, rgba(90,153,199,1) calc(40% - 2px), rgba(247,202,0,1) 40%, rgba(247,202,0,1) calc(50% - 2px), rgba(233,90,130,1) 50%, rgba(233,90,130,1) calc(60% - 2px), rgba(90,153,199,1) 60%, rgba(90,153,199,1) calc(70% - 2px), rgba(247,202,0,1) 70%, rgba(247,202,0,1) calc(80% - 2px), rgba(233,90,130,1) 80%, rgba(233,90,130,1) calc(90% - 2px), rgba(90,153,199,1) 90%);
+          background-size: cover;
+        }
+      }
+
+      &--active {
+        background-color: #ffffff;
+
+        &::after {
+          display: block;
+        }
+      }
     }
   }
 }

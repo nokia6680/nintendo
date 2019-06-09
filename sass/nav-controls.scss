@@ -57,3 +57,21 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .nav-controls {
+    height: 63px;
+
+    &__link {
+      font-size: 1.875em;
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .nav-controls {
+    display: none;
+  }
+}

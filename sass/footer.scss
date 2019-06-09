@@ -6,6 +6,10 @@
 
   background-color: $bg-footer;
 
+  &__image {
+    display: none;
+  }
+
 
   &__wrapper {
     @include flex-setting(row, space-between, center, nowrap);
@@ -62,5 +66,147 @@
 }
 
 @media only screen and (min-width: $laptop) {
+  .footer {
+    padding-top: 5px;
+    padding-bottom: 5px;
 
+    position: relative;
+
+    &__image {
+      position: absolute;
+      display: block;
+      z-index: -1;
+
+      &--1 {
+        width: 295px;
+        height: 241px;
+
+        top: -240px;
+        left: 0px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+
+      &--2 {
+        width: 304px;
+        height: 181.5px;
+
+        top: -160px;
+        left: 0px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+
+      &--3 {
+        width: 202.5px;
+        height: 259.5px;
+
+        top: -250px;
+        left: 0px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+
+      &--4 {
+        width: 274px;
+        height: 223.5px;
+
+        top: -243px;
+        left: 0px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+
+      &--5 {
+        width: 295px;
+        height: 252px;
+
+        top: -245px;
+        left: 50px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+
+    &__wrapper {
+      padding-left: 30px;
+      padding-right: 30px;
+      transition: 0.2s ease-in;
+    }
+
+    &__logo {
+      width: 187px;
+      height: 27px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-hd) {
+  .footer {
+    &__image {
+      &--1 {
+        width: 394px;
+        height: 322px;
+
+        top: -320px;
+
+        transition: 0.3s ease-in-out;
+      }
+
+      &--2 {
+        width: 405px;
+        height: 242px;
+
+        top: -210px;
+
+        transition: 0.3s ease-in-out;
+      }
+
+      &--3 {
+        width: 270px;
+        height: 346px;
+
+        top: -340px;
+        transition: 0.3s ease-in-out;
+      }
+
+      &--4 {
+        width: 365px;
+        height: 298px;
+
+        top: -320px;
+        transition: 0.3s ease-in-out;
+      }
+
+      &--5 {
+        width: 393px;
+        height: 336px;
+
+        top: -310px;
+        left: 50px;
+        transition: 0.3s ease-in-out;
+      }
+    }
+
+    &__wrapper {
+      padding-left: 30px;
+      padding-right: 30px;
+      transition: 0.2s ease-in;
+    }
+
+    &__logo {
+      width: 187px;
+      height: 27px;
+    }
+  }
 }

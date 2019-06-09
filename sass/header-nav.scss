@@ -98,3 +98,54 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .header-nav {
+    &__logo {
+      width: 104px;
+      height: 50px;
+
+      margin-left: 30px;
+      transition: 0.2s ease-in;
+    }
+
+    &__toggle {
+      width: 78px;
+      height: 63px;
+      background-size: 41px 38px;
+
+      margin-right: 40px;
+
+      border-width: 4px;
+
+      &--active {
+        background-size: 38px 38px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-hd) {
+  .header-nav {
+    justify-content: center;
+
+    &__logo {
+      width: 188px;
+      height: 88px;
+
+      margin-left: 0;
+      margin-right: 0;
+
+      padding-left: 25px;
+      padding-right: 25px;
+
+      border-left: 4px solid #000000;
+
+      transition: 0.2s ease-in;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+}

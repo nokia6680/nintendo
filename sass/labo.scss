@@ -111,3 +111,33 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .labo {
+    &__content {
+      width: 380px;
+
+      padding: 9px;
+      border-width: 8px;
+      padding-bottom: 0;
+
+      margin-bottom: 60px;
+
+      &::before {
+        width: 8px;
+        height: 9px;
+
+        bottom: -9px;
+        left: -8px;
+      }
+
+      &::after {
+        width: 380px;
+        height: 8px;
+
+        bottom: -16px;
+        left: -8px;
+      }
+    }
+  }
+}

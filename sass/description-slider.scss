@@ -46,3 +46,18 @@
     }
   }
 }
+
+@media only screen and (min-width: $tablet) {
+  .description-slider {
+    width: 388px;
+
+    &__item {
+      width: 388px;
+    }
+
+    &__text {
+      width: 388px;
+      font-size: 1em;
+    }
+  }
+}

@@ -11,3 +11,27 @@
     padding-top: 20px;
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .choose {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-top: 15px;
+
+    &--feedback {
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-hd) {
+  .choose {
+    max-width: 1060px;
+
+    &--feedback {
+      justify-content: flex-end;
+    }
+  }
+}

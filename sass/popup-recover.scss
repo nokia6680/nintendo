@@ -119,3 +119,40 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .popup-recover {
+    &__wrapper {
+      width: 348px;
+    }
+
+    &__title {
+      font-size: 1.75em;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      border-width: 5px;
+    }
+
+    &__close {
+      width: 45px;
+      height: 45px;
+
+      background-size: 20px 20px;
+      border-width: 2px;
+
+      top: -45px;
+      right: -45px;
+    }
+
+    &__subtitle {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      font-size: 1em;
+    }
+  }
+}

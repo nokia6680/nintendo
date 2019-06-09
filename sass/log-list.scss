@@ -87,3 +87,28 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .log-list {
+    padding-top: 10px;
+
+    &__item {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &__input {
+      font-size: 1.344em;
+      border-width: 4px;
+    }
+
+    &__label {
+      font-size: 1.122em;
+      margin-bottom: 5px;
+    }
+
+    &__error {
+      font-size: 0.65em;
+    }
+  }
+}

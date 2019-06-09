@@ -30,7 +30,7 @@
       bottom: 0;
       left: -9px;
 
-      background: repeating-linear-gradient(90deg, black 0%, black 4%, white 4%, white 7%);
+      background: repeating-linear-gradient(90deg, black 0%, black 2%, white 2%, white 3%);
     }
 
     &:last-of-type {
@@ -91,6 +91,25 @@
 
     &__label {
       font-size: 1.375em;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .form-list {
+    &__item {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 9px;
+
+      &::after {
+        width: 500px;
+        left: -5px;
+      }
+    }
+
+    &__label {
+      font-size: 1em;
     }
   }
 }

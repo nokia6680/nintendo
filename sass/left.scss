@@ -117,3 +117,34 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .left {
+    margin-top: 20px;
+
+    width: 256px;
+
+    transition: 0.1s ease-in;
+
+    &__information {
+      width: 100%;
+      border-width: 5px;
+    }
+
+    &__unregistered {
+      font-size: 1.125em;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    &__title {
+      font-size: 1.375em;
+      border-width: 5px;
+    }
+
+    &__answer {
+      font-size: 1.125em;
+    }
+  }
+}

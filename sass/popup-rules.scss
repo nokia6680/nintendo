@@ -21,6 +21,7 @@
 
     position: relative;
     background-color: #ffffff;
+    border: 2px solid #000000;
 
     box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.4);
     -webkit-box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.4);
@@ -79,7 +80,7 @@
       bottom: 0;
       left: -9px;
 
-      background: repeating-linear-gradient(90deg, black 0%, black 4%, white 4%, white 7%);
+      background: repeating-linear-gradient(90deg, black 0%, black 2%, white 2%, white 3%);
     }
 
     &:last-of-type {
@@ -213,6 +214,62 @@
       margin-bottom: 10px;
 
       width: 330px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .popup-rules {
+    &__wrapper {
+      width: 348px;
+      border-width: 5px;
+    }
+
+    &__title {
+      font-size: 1.75em;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      border-width: 5px;
+    }
+
+    &__close {
+      width: 45px;
+      height: 45px;
+
+      background-size: 20px 20px;
+      border-width: 2px;
+
+      top: -45px;
+      right: -45px;
+    }
+
+    &__item {
+      padding-top: 15px;
+      padding-bottom: 7px;
+
+      &::after {
+        width: 500px;
+        left: -12px;
+      }
+    }
+
+    &__nr {
+      font-size: 2em;
+      border-width: 4px;
+
+      margin-bottom: 10px;
+
+      min-width: 46px;
+      height: 46px;
+    }
+
+    &__text {
+      font-size: 1.125em;
+      margin-bottom: 10px;
+
+      width: 230px;
     }
   }
 }

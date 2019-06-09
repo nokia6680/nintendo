@@ -222,3 +222,63 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .content-slider {
+    border-width: 5px;
+    height: 187px;
+
+    .prev,
+    .next {
+      width: 74px;
+      height: 42px;
+      transition: 0.2s ease-in;
+    }
+
+    .prev {
+      top: 38%;
+      left: -79px;
+
+      background-size: 74px 42px;
+      transition: 0.2s ease-in;
+    }
+
+    .next {
+      top: 38%;
+      right: -79px;
+
+      background-size: 74px 42px;
+      transition: 0.2s ease-in;
+    }
+
+    &__item {
+      height: 177px;
+    }
+
+    &__btn {
+      width: 64px;
+      height: 70px;
+    }
+
+    .slick-dots {
+      bottom: -50px;
+
+      button {
+        width: 12px;
+        height: 12px;
+      }
+
+      li.slick-active button {
+        width: 12px;
+        height: 12px;
+
+        &::before {
+          width: 20px;
+          height: 20px;
+
+          border: 2px solid #000000;
+        }
+      }
+    }
+  }
+}

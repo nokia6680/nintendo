@@ -173,3 +173,60 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .popup-winner {
+    &__wrapper {
+      width: 348px;
+      border-width: 5px;
+    }
+
+    &__title {
+      font-size: 1.75em;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      border-width: 5px;
+    }
+
+    &__close {
+      width: 45px;
+      height: 45px;
+
+      background-size: 20px 20px;
+      border-width: 2px;
+
+      top: -45px;
+      right: -45px;
+    }
+
+    &__item {
+      &::after {
+        width: 510px;
+        left: -4px;
+      }
+    }
+
+    &__date {
+      font-size: 2.125em;
+      margin-bottom: 0px;
+      margin-top: 20px;
+    }
+
+    &__note {
+      font-size: 1.125em;
+      margin-bottom: 20px;
+    }
+
+    &__name {
+      font-size: 2.125em;
+      margin-bottom: 0px;
+      margin-top: 20px;
+    }
+
+    &__city {
+      font-size: 1.175em;
+    }
+  }
+}

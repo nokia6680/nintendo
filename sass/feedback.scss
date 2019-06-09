@@ -51,22 +51,23 @@
 
 @media only screen and (min-width: $mobile) {
   .feedback {
-    padding-top: 20px;
-    margin-bottom: 47px;
+    width: 380px;
+    padding-top: 88px;
+    margin-bottom: 0;
 
     &__reaction {
-      width: 510px;
-      border-width: 6px;
-      margin-bottom: 42px;
+      width: 380px;
+      border-width: 5px;
+      margin-bottom: 24px;
     }
 
     &__information {
-      border-width: 6px;
-      width: 392px;
+      border-width: 5px;
+      width: 290px;
     }
 
     &__text {
-      font-size: 1.625em;
+      font-size: 1.294em;
 
       padding-top: 10px;
       padding-bottom: 10px;

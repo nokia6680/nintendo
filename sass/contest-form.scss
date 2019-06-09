@@ -78,7 +78,7 @@
   }
 }
 
-@media only screen and (min-width: $mobile) {
+@media only screen and (min-width: $tablet) {
   .contest-form {
     width: 476px;
     border-width: 6px;
@@ -98,6 +98,31 @@
       height: 50px;
 
       bottom: -70px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .contest-form {
+    width: 350px;
+    border-width: 5px;
+    margin-bottom: 65px;
+
+    &__question {
+      font-size: 1em;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-width: 3px;
+    }
+
+    &__submit {
+      font-size: 1.375em;
+
+      width: 146px;
+      height: 36px;
+
+      bottom: -60px;
     }
   }
 }
