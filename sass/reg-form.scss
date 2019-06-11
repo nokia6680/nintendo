@@ -58,3 +58,14 @@
     }
   }
 }
+
+@media only screen and (min-width: $widebook-hd) {
+  .reg-form {
+    padding-bottom: 30px;
+    border-width: 6px;
+
+    &__submit {
+      font-size: 1.875em;
+    }
+  }
+}

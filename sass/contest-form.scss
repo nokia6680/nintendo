@@ -126,3 +126,28 @@
     }
   }
 }
+
+@media only screen and (min-width: $widebook-sm) {
+  .contest-form {
+    width: 496px;
+    border-width: 6px;
+    margin-bottom: 65px;
+
+    &__question {
+      font-size: 1.5em;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-width: 5px;
+    }
+
+    &__submit {
+      font-size: 1.875em;
+
+      width: 205px;
+      height: 50px;
+
+      bottom: -70px;
+    }
+  }
+}

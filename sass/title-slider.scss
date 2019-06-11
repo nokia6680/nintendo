@@ -47,6 +47,7 @@
 @media only screen and (min-width: $tablet) {
   .title-slider {
     width: 488px;
+    transition: 0.2s ease-in-out;
 
     border-width: 6px;
 
@@ -57,6 +58,7 @@
 
     &__text {
       font-size: 2em;
+      transition: 0.2s ease-in-out;
     }
   }
 }
@@ -74,6 +76,20 @@
 
     &__text {
       font-size: 1.516em;
+    }
+  }
+}
+
+@media only screen and (min-width: $widebook-sm) {
+  .title-slider {
+    width: 488px;
+
+    border-width: 6px;
+
+    margin-bottom: 26px;
+
+    &__text {
+      font-size: 2em;
     }
   }
 }

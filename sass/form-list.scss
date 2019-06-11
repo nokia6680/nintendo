@@ -42,6 +42,11 @@
 
   &__label {
     @include font-setting($alternate-font, 0.85em, normal, 400, $text-primary);
+
+    &:hover {
+      color: $social-hover;
+      transition: 0.2s ease-in;
+    }
   }
 
   &__input + label {
@@ -110,6 +115,25 @@
 
     &__label {
       font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (min-width: $widebook-sm) {
+  .form-list {
+    &__item {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 14px;
+
+      &::after {
+        width: 520px;
+        left: -5px;
+      }
+    }
+
+    &__label {
+      font-size: 1.5em;
     }
   }
 }

@@ -151,7 +151,7 @@
   }
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $laptop) {
   .reg-list {
     margin-bottom: 25px;
     padding-top: 10px;
@@ -184,6 +184,46 @@
 
       &--required {
         margin-left: 35px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $widebook-hd) {
+  .reg-list {
+    margin-bottom: 25px;
+    padding-top: 10px;
+
+    &__item {
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+
+    &__input {
+      font-size: 1.875em;
+      border-width: 4px;
+    }
+
+    &__label {
+      font-size: 1.5em;
+
+      &--checkbox {
+        font-size: 1.125em;
+      }
+    }
+
+    &__error {
+      font-size: 0.875em;
+      margin-top: 5px;
+
+      &--pass {
+        margin-bottom: 10px;
+      }
+
+      &--required {
+        margin-left: 48px;
       }
     }
   }

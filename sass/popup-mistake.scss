@@ -123,3 +123,29 @@
     }
   }
 }
+
+@media only screen and (min-width: $widebook-hd) {
+  .popup-mistake {
+    &__wrapper {
+      width: 322px;
+      border-width: 6px;
+      padding: 0;
+    }
+
+    &__description {
+      font-size: 1.875em;
+      width: 250px;
+    }
+
+    &__close {
+      width: 53px;
+      height: 53px;
+
+      background-size: 30px 30px;
+      border-width: 4px;
+
+      top: -55px;
+      right: -55px;
+    }
+  }
+}

@@ -180,8 +180,7 @@
   }
 }
 
-
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $laptop) {
   .contest {
     &__wrap {
       width: 380px;
@@ -218,6 +217,47 @@
     &__play {
       border-width: 4px;
       height: 192px;
+    }
+  }
+}
+
+@media only screen and (min-width: $widebook-sm) {
+  .contest {
+    &__wrap {
+      width: 543px;
+
+      padding: 11px;
+      border-width: 12px;
+      padding-bottom: 0;
+
+      margin-bottom: 40px;
+
+      &::before {
+        width: 12px;
+        height: 12px;
+
+        bottom: -12px;
+        left: -12px;
+
+      }
+
+      &::after {
+        width: 543px;
+        height: 12px;
+
+        bottom: -21px;
+        left: -12px;
+      }
+    }
+
+    &__play {
+      border-width: 5px;
+      height: 275px;
+    }
+
+    &__btn {
+      width: 92px;
+      height: 102px;
     }
   }
 }

@@ -39,24 +39,64 @@ body {
 }
 
 .body-contest {
-  background-image: url('../img/bg-main.png');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background-image: url('../img/bg-lines.png'), url('../img/bg-index-lower.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom 20px center;
+
+  @media only screen and (min-width: $laptop-wide) {
+    background-image: url('../img/bg-lines.png'), url('../img/bg-index-lower.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom -10px center;
+    background-size: cover, contain;
+  }
+
+  @media only screen and (min-width: $laptop-wide) {
+    background-image: url('../img/bg-lines.png'), url('../img/bg-index-lower.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom 20px center;
+    background-size: cover, contain;
+  }
 }
 
 .body-feedback {
-  background-image: url('../img/feedback-bg.png');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background-color: #f7c900;
+  background-image: url('../img/bg-lines.png'), url('../img/bg-labo-lower.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom 20px center;
+
+  @media only screen and (min-width: $laptop-wide) {
+    background-image: url('../img/bg-lines.png'), url('../img/bg-labo-lower.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom -10px center;
+    background-size: cover, contain;
+  }
+
+  @media only screen and (min-width: $laptop-wide) {
+    background-image: url('../img/bg-lines.png'), url('../img/bg-labo-lower.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom 20px center;
+    background-size: cover, contain;
+  }
 }
 
 .body-labo {
-  background-image: url('../img/labo-bg.png');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background-image: url('../img/bg-lines.png'), url('../img/bg-labo-lower.png'), url('../img/bg-labo-upper.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top center, bottom 20px center, top -50px center;
+
+  @media only screen and (min-width: $laptop-wide) {
+    background-image: url('../img/bg-lines.png'), url('../img/bg-labo-lower.png'), url('../img/bg-labo-upper.png');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top center, bottom -10px center, top -50px center;
+    background-size: cover, contain;
+  }
+
+  @media only screen and (min-width: $laptop-wide) {
+    background-image: url('../img/bg-lines.png'), url('../img/bg-labo-lower.png'), url('../img/bg-labo-upper.png');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top center, bottom 20px center, top -50px center;
+    background-size: cover, contain;
+  }
 }
 
 img {

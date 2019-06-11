@@ -148,17 +148,6 @@
       text-decoration: none;
     }
 
-    &__pic {
-      width: 152px;
-      max-width: 152px;
-      height: auto;
-
-      background-image: url('../img/labo-r1.svg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }
-
     .right__description {
       display: inline-flex;
       flex-direction: column;
@@ -174,6 +163,35 @@
       &--small {
         font-size: 0.875em;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: $widebook-sm) {
+  .right {
+    margin-top: 50px;
+    width: 363px;
+
+    &__list {
+      border-width: 6px;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      .right__image {
+        width: 216px;
+        max-width: 216px;
+      }
+    }
+
+    &__information {
+      border-width: 6px;
+    }
+
+    .right__description {
+      font-size: 2.5em;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
   }
 }

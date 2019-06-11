@@ -47,17 +47,19 @@
   }
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $laptop) {
   .description-slider {
-    width: 388px;
-
-    &__item {
-      width: 388px;
-    }
-
     &__text {
-      width: 388px;
       font-size: 1em;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $widebook-hd) {
+  .description-slider {
+    &__text {
+      font-size: 1.5em;
     }
   }
 }

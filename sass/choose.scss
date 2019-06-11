@@ -35,3 +35,14 @@
     }
   }
 }
+
+@media only screen and (min-width: $widebook-sm) {
+  .choose {
+    max-width: 1430px;
+    padding-top: 50px;
+
+    &--feedback {
+      justify-content: flex-end;
+    }
+  }
+}

@@ -49,7 +49,7 @@
 }
 
 
-@media only screen and (min-width: $mobile) {
+@media only screen and (min-width: $tablet) {
   .feedback {
     width: 380px;
     padding-top: 88px;
@@ -68,6 +68,38 @@
 
     &__text {
       font-size: 1.294em;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .feedback {
+    margin-right: 160px;
+
+  }
+}
+
+@media only screen and (min-width: $widebook-sm) {
+  .feedback {
+    width: 512px;
+    margin-right: 160px;
+
+    &__reaction {
+      width: 512px;
+      border-width: 5px;
+      margin-bottom: 35px;
+    }
+
+    &__information {
+      border-width: 5px;
+      width: 392px;
+    }
+
+    &__text {
+      font-size: 1.75em;
 
       padding-top: 10px;
       padding-bottom: 10px;

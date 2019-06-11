@@ -149,3 +149,15 @@
     }
   }
 }
+
+@media only screen and (min-width: $widebook-sm) {
+  .header-nav {
+    &__logo {
+      width: 255px;
+      height: 113px;
+
+      padding-left: 37px;
+      padding-right: 37px;
+    }
+  }
+}

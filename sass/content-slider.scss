@@ -132,7 +132,6 @@
 
 @media only screen and (min-width: $mobile) {
   .content-slider {
-
     &__item {
       width: 100%;
     }
@@ -227,6 +226,7 @@
   .content-slider {
     border-width: 5px;
     height: 187px;
+    transition: 0.2s ease-in;
 
     .prev,
     .next {
@@ -277,6 +277,64 @@
           height: 20px;
 
           border: 2px solid #000000;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $widebook-sm) {
+  .content-slider {
+    border-width: 6px;
+    height: 272px;
+    transition: 0.2s ease-in;
+
+    .prev,
+    .next {
+      width: 104px;
+      height: 57px;
+    }
+
+    .prev {
+      top: 38%;
+      left: -111px;
+
+      background-size: 104px 57px;
+    }
+
+    .next {
+      top: 38%;
+      right: -111px;
+
+      background-size: 104px 57px;
+    }
+
+    &__item {
+      height: 261px;
+    }
+
+    &__btn {
+      width: 92px;
+      height: 103px;
+    }
+
+    .slick-dots {
+      bottom: -70px;
+
+      button {
+        width: 18px;
+        height: 18px;
+      }
+
+      li.slick-active button {
+        width: 18px;
+        height: 18px;
+
+        &::before {
+          width: 30px;
+          height: 30px;
+
+          border: 3px solid #000000;
         }
       }
     }

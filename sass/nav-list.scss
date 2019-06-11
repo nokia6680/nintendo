@@ -30,6 +30,10 @@
       background-color: #ffffff;
     }
 
+    &--index {
+      display: none;
+    }
+
     &--register {
       display: none;
     }
@@ -133,6 +137,10 @@
         display: none;
       }
 
+      &--index {
+        display: inline-flex;
+      }
+
       &--register {
         display: inline-flex;
       }
@@ -182,6 +190,41 @@
           display: block;
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-width: $widebook-sm) {
+  .nav-list {
+    height: 113px;
+
+    &__item {
+      height: 113px;
+      border-width: 4px;
+
+      &--winner {
+        border-width: 4px;
+      }
+    }
+
+    &__link {
+      font-size: 1.625em;
+      height: 113px;
+      padding: 0 37px;
+
+      &:hover {
+        &::after {
+          height: 11px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $widebook-hd) {
+  .nav-list {
+    &__link {
+      font-size: 1.875em;
     }
   }
 }

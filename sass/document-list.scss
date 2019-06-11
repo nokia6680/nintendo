@@ -47,3 +47,30 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop-wide) {
+  .document-list {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+
+    &__item {
+      text-align: left;
+      width: auto;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    &__link {
+      font-size: 0.75em;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop-wide) {
+  .document-list {
+    &__link {
+      font-size: 1em;
+    }
+  }
+}

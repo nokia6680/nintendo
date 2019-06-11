@@ -141,22 +141,21 @@
   }
 }
 
-@media only screen and (min-width: $widebook-hd) {
+@media only screen and (min-width: $laptop-wide) {
   .social-list {
-    width: auto;
-
-    padding-top: 7px;
-    padding-bottom: 7px;
-
+    margin-right: 0;
     margin-left: auto;
-    margin-right: 90px;
+  }
+}
 
+@media only screen and (min-width: $widebook-sm) {
+  .social-list {
     &__item {
       width: 32px;
       height: 32px;
 
       &:not(:last-of-type) {
-        margin-right: 13px;
+        margin-right: 14px;
       }
     }
 
@@ -178,10 +177,6 @@
       }
 
       .fa-instagram::before {
-        font-size: 1.25em;
-      }
-
-      .fa-odnoklassniki::before {
         font-size: 1.25em;
       }
     }
