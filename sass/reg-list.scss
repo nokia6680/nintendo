@@ -15,6 +15,17 @@
     padding-right: 10px;
     padding-top: 2px;
     padding-bottom: 2px;
+    margin-bottom: 10px;
+
+    position: relative;
+
+    &--last {
+      margin-bottom: 15px;
+    }
+
+    &--policy {
+      margin-bottom: 0;
+    }
   }
 
   &__input {
@@ -29,6 +40,12 @@
 
     cursor: text;
     outline: none;
+
+    &:hover,
+    &:active {
+      border-color: $social-hover;
+      transition: 0.2s ease-in;
+    }
   }
 
   &__label {
@@ -52,12 +69,14 @@
     @include font-setting($alternate-font, 0.5em, normal, 400, $text-error);
     margin-top: 3px;
 
-    &--pass {
-      margin-bottom: 10px;
-    }
+    position: absolute;
+    display: none;
+
+    bottom: -9px;
+    left: 10px;
 
     &--required {
-      margin-left: 25px;
+      left: 35px;
     }
   }
 
@@ -82,6 +101,10 @@
     &__item {
       padding-top: 3px;
       padding-bottom: 3px;
+
+      &--policy {
+        margin-bottom: 0;
+      }
     }
 
     &__input {
@@ -98,15 +121,7 @@
 
     &__error {
       font-size: 0.6em;
-      margin-top: 5px;
-
-      &--pass {
-        margin-bottom: 10px;
-      }
-
-      &--required {
-        margin-left: 25px;
-      }
+      bottom: -10px;
     }
   }
 }
@@ -121,6 +136,15 @@
       padding-right: 18px;
       padding-top: 3px;
       padding-bottom: 3px;
+      margin-bottom: 15px;
+
+      &--last {
+        margin-bottom: 20px;
+      }
+
+      &--policy {
+        margin-bottom: 0;
+      }
     }
 
     &__input {
@@ -138,14 +162,12 @@
 
     &__error {
       font-size: 0.875em;
-      margin-top: 5px;
 
-      &--pass {
-        margin-bottom: 10px;
-      }
+      bottom: -15px;
+      left: 18px;
 
       &--required {
-        margin-left: 48px;
+        left: 64px;
       }
     }
   }
@@ -159,6 +181,15 @@
     &__item {
       padding-left: 10px;
       padding-right: 10px;
+      margin-bottom: 10px;
+
+      &--last {
+        margin-bottom: 20px;
+      }
+
+      &--policy {
+        margin-bottom: 0;
+      }
     }
 
     &__input {
@@ -176,14 +207,11 @@
 
     &__error {
       font-size: 0.65em;
-      margin-top: 5px;
-
-      &--pass {
-        margin-bottom: 10px;
-      }
+      bottom: -10px;
+      left: 10px;
 
       &--required {
-        margin-left: 35px;
+        left: 45px;
       }
     }
   }
@@ -199,6 +227,16 @@
       padding-right: 18px;
       padding-top: 3px;
       padding-bottom: 3px;
+
+      margin-bottom: 15px;
+
+      &--last {
+        margin-bottom: 25px;
+      }
+
+      &--policy {
+        margin-bottom: 0;
+      }
     }
 
     &__input {
@@ -216,14 +254,11 @@
 
     &__error {
       font-size: 0.875em;
-      margin-top: 5px;
-
-      &--pass {
-        margin-bottom: 10px;
-      }
+      left: 18px;
+      bottom: -15px;
 
       &--required {
-        margin-left: 48px;
+        left: 64px;
       }
     }
   }

@@ -26,6 +26,8 @@
     border-bottom: 3px solid #000000;
     background-image: url('../img/header-pattern.png');
     background-repeat: repeat;
+
+    width: 100%;
   }
 
   &__submit {
@@ -56,6 +58,9 @@
 
     display: inline-flex;
     text-transform: uppercase;
+
+    cursor: pointer;
+    outline: none;
   }
 }
 

@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script id="iframe-demo" src="https://www.youtube.com/iframe_api"></script>
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -23,6 +24,11 @@
 		<!--Page header-->
 		<header class="header">
 			<nav class="header__nav header-nav">
+				<div class="header-nav__logo header-nav__logo--mobile">
+					<a class="header-nav__link" href="labo.html" target="_self">
+						<img class="header-nav__img" src="img/labo-logo.svg" alt="Nintendo Labo" />
+					</a>
+				</div>
         <!--Мобильная часть меню входа и регистрации-->
         <ul class="header-nav__list nav-controls">
           <li class="nav-controls__item">
@@ -42,9 +48,6 @@
 					<li class="nav-list__item nav-list__item--index">
 						<a class="nav-list__link" href="index.html" target="_self">На главную</a>
 					</li>
-          <li class="nav-list__item nav-list__item--nintendo">
-            <a class="nav-list__link" href="labo.html" target="_self">Nintendo Labo</a>
-          </li>
 					<li class="nav-list__item nav-list__item--main">
 						<a class="nav-list__link" href="#" target="_self">На главную</a>
 					</li>
@@ -95,31 +98,31 @@
         </div>
         <!--Слайдер видеоконтента-->
         <div class="labo__content">
-          <div class="labo__slider slider content-slider" id="contest-slider">
+          <div class="labo__slider slider content-slider" id="content-slider">
             <!--Slide-->
-            <div class="content-slider__item">
+            <div class="content-slider__item" data-item="k9RRorAG7uA">
+              <img class="content-slider__img" src="img/video-preview-1.jpg" />
               <button class="content-slider__btn" type="btn"></button>
-              <iframe class="content-slider__video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <!--Slide-->
-            <div class="content-slider__item">
+            <div class="content-slider__item" data-item="rRC1xRaaDHI">
+              <img class="content-slider__img" src="img/video-preview-2.jpg" />
               <button class="content-slider__btn" type="btn"></button>
-              <iframe class="content-slider__video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <!--Slide-->
-            <div class="content-slider__item">
+            <div class="content-slider__item" data-item="j_oLfOyLG80">
+              <img class="content-slider__img" src="img/video-preview-3.jpg" />
               <button class="content-slider__btn" type="btn"></button>
-              <iframe class="content-slider__video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <!--Slide-->
-            <div class="content-slider__item">
+            <div class="content-slider__item" data-item="vygTMYYpoXE">
+              <img class="content-slider__img" src="img/video-preview-4.jpg" />
               <button class="content-slider__btn" type="btn"></button>
-              <iframe class="content-slider__video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <!--Slide-->
-            <div class="content-slider__item">
+            <div class="content-slider__item" data-item="-fS97CkXmyI">
+              <img class="content-slider__img" src="img/video-preview-5.jpg" />
               <button class="content-slider__btn" type="btn"></button>
-              <iframe class="content-slider__video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
           <div class="prev"></div>

@@ -125,7 +125,7 @@
 
 @media only screen and (min-width: $laptop) {
   .right {
-    margin-top: 55px;
+    margin-top: 35px;
     width: 256px;
 
     @include flex-setting(column, flex-start, center, nowrap);
@@ -137,14 +137,15 @@
       padding: 0;
 
       width: 100%;
-      border-bottom: 5px solid #000000;
+      height: 246px;
+      border-bottom: none;
 
-      padding-top: 5px;
-      padding-bottom: 5px;
+      padding-top: 3px;
+      padding-bottom: 3px;
 
       .right__image {
-        width: 152px;
-        max-width: 152px;
+        width: 150px;
+        max-width: 150px;
         height: auto;
       }
     }
@@ -155,6 +156,7 @@
       text-align: center;
       text-decoration: none;
       color: #000000;
+      height: 320px;
     }
 
     .right__description {
@@ -162,12 +164,16 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      line-height: 1;
 
       width: 100%;
+      height: auto;
       background-color: #ffffff;
-      font-size: 1.875em;
-      padding-top: 0px;
-      padding-bottom: 0px;
+      font-size: 1.82em;
+      padding-top: 2px;
+      padding-bottom: 2px;
+
+      border-top: 5px solid #000000;
 
       &--small {
         font-size: 0.875em;
@@ -182,10 +188,10 @@
     width: 363px;
 
     &__list {
-      border-width: 6px;
-
       padding-top: 5px;
       padding-bottom: 5px;
+
+      height: 356px;
 
       .right__image {
         width: 216px;
@@ -196,12 +202,14 @@
     &__information {
       border-width: 6px;
       color: #000000;
+      height: 455px;
     }
 
     .right__description {
       font-size: 2.5em;
-      padding-top: 5px;
-      padding-bottom: 5px;
+      border-width: 6px;
+      padding-top: 3px;
+      padding-bottom: 4px;
     }
   }
 }

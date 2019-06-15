@@ -1,5 +1,6 @@
 .content-slider {
   width: 100%;
+  height: 156px;
 
   position: relative;
 
@@ -15,6 +16,7 @@
 
   &__item {
     width: 100%;
+    height: 148px;
     position: relative;
 
     background: linear-gradient(105deg,
@@ -33,32 +35,84 @@
     rgba(90,153,199,1) 78%,
     rgba(90,153,199,1) calc(91% - 2px),
     rgba(247,202,0,1) 91%);
-  }
 
-  &__btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    .content-slider__img {
+      position: absolute;
+      display: block;
 
-    width: 44px;
-    height: 49px;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-size: contain;
+    }
 
-    cursor: pointer;
+    .content-slider__btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
-    background-color: transparent;
-    background-image: url('../img/play-btn.png');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
+      width: 44px;
+      height: 49px;
 
-    z-index: auto;
+      cursor: pointer;
+
+      background-color: transparent;
+      background-image: url('../img/play-btn.png');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: none;
+
+      z-index: auto;
+    }
+
+
+    &--active {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+
+        width: 35%;
+        height: 80%;
+
+        top: 50%;
+        left: 0;
+
+        transform: translateY(-50%);
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+
+        width: 35%;
+        height: 80%;
+
+        top: 50%;
+        right: 0;
+
+        transform: translateY(-50%);
+      }
+
+      .content-slider__img {
+        display: none;
+      }
+
+      .content-slider__btn {
+        display: none;
+      }
+    }
   }
 
   &__video {
     width: 100%;
     height: 100%;
+
+    z-index: 99;
   }
 
   .slick-dots {
@@ -132,8 +186,11 @@
 
 @media only screen and (min-width: $mobile) {
   .content-slider {
+      height: 185px;
+
     &__item {
       width: 100%;
+      height: 177px;
     }
 
     &__btn {
@@ -150,7 +207,7 @@
 @media only screen and (min-width: $tablet) {
   .content-slider {
     border-width: 6px;
-    height: 261px;
+    height: 267px;
 
     .prev,
     .next {
@@ -173,7 +230,7 @@
       background-repeat: no-repeat;
       background-size: 100px 54px;
 
-      z-index: 22;
+      z-index: 4;
     }
 
     .next {
@@ -186,12 +243,12 @@
       background-repeat: no-repeat;
       background-size: 100px 54px;
 
-      z-index: 22;
+      z-index: 4;
     }
 
     &__item {
       width: 100%;
-      height: 249px;
+      height: 255px;
     }
 
     &__btn {
@@ -225,7 +282,7 @@
 @media only screen and (min-width: $laptop) {
   .content-slider {
     border-width: 5px;
-    height: 187px;
+    height: 195px;
     transition: 0.2s ease-in;
 
     .prev,
@@ -252,7 +309,7 @@
     }
 
     &__item {
-      height: 177px;
+      height: 185px;
     }
 
     &__btn {
@@ -286,7 +343,7 @@
 @media only screen and (min-width: $widebook-sm) {
   .content-slider {
     border-width: 6px;
-    height: 272px;
+    height: 279px;
     transition: 0.2s ease-in;
 
     .prev,
@@ -310,7 +367,7 @@
     }
 
     &__item {
-      height: 261px;
+      height: 267px;
     }
 
     &__btn {

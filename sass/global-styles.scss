@@ -42,20 +42,27 @@ body {
 .body-contest {
   background-image: url('../img/bg-lines.png'), url('../img/bg-index-lower.png');
   background-repeat: no-repeat, no-repeat;
-  background-position: top center, bottom 20px center;
+  background-position: top center, bottom -75px center;
 
-  @media only screen and (min-width: $laptop-wide) {
-    background-image: url('../img/bg-lines.png'), url('../img/bg-index-lower.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: top center, bottom -10px center;
-    background-size: cover, contain;
+  @media only screen and (min-width: $mobile) {
+    background-position: top center, bottom -105px center;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    background-position: top center, bottom -25px center;
+  }
+
+  @media only screen and (min-width: $laptop) {
+    background-position: top center, bottom -50px center;
   }
 
   @media only screen and (min-width: $laptop-wide) {
-    background-image: url('../img/bg-lines.png'), url('../img/bg-index-lower.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: top center, bottom 20px center;
+    background-position: top center, bottom 0px center;
     background-size: cover, contain;
+  }
+
+  @media only screen and (min-width: $widebook-hd) {
+    background-position: top center, bottom 40px center;
   }
 }
 
@@ -63,40 +70,55 @@ body {
   background-color: #f7c900;
   background-image: url('../img/bg-lines.png'), url('../img/bg-labo-lower.png');
   background-repeat: no-repeat, no-repeat;
-  background-position: top center, bottom 20px center;
+  background-position: top center, bottom -75px center;
 
-  @media only screen and (min-width: $laptop-wide) {
-    background-image: url('../img/bg-lines.png'), url('../img/bg-labo-lower.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: top center, bottom -10px center;
-    background-size: cover, contain;
+  @media only screen and (min-width: $mobile) {
+    background-position: top center, bottom -105px center;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    background-position: top center, bottom -25px center;
+  }
+
+  @media only screen and (min-width: $laptop) {
+    background-position: top center, bottom -50px center;
   }
 
   @media only screen and (min-width: $laptop-wide) {
-    background-image: url('../img/bg-lines.png'), url('../img/bg-labo-lower.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: top center, bottom 20px center;
+    background-position: top center, bottom 0px center;
     background-size: cover, contain;
+  }
+
+  @media only screen and (min-width: $widebook-hd) {
+    background-position: top center, bottom 40px center;
   }
 }
 
 .body-labo {
   background-image: url('../img/bg-lines.png'), url('../img/bg-labo-lower.png'), url('../img/bg-labo-upper.png');
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: top center, bottom 20px center, top -50px center;
+  background-position: top center, bottom -130px center, top -50px center;
+  transition: 0.2s ease-in-out;
 
-  @media only screen and (min-width: $laptop-wide) {
-    background-image: url('../img/bg-lines.png'), url('../img/bg-labo-lower.png'), url('../img/bg-labo-upper.png');
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: top center, bottom -10px center, top -50px center;
-    background-size: cover, contain;
+  @media only screen and (min-width: $mobile) {
+    background-position: top center, bottom -75px center, top -50px center;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    background-position: top center, bottom 15px center, top -50px center;
+  }
+
+  @media only screen and (min-width: $laptop) {
+    background-position: top center, bottom -95px center, top -50px center;
   }
 
   @media only screen and (min-width: $laptop-wide) {
-    background-image: url('../img/bg-lines.png'), url('../img/bg-labo-lower.png'), url('../img/bg-labo-upper.png');
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: top center, bottom 20px center, top -50px center;
+    background-position: top center, bottom -30px center, top -50px center;
     background-size: cover, contain;
+  }
+
+  @media only screen and (min-width: $widebook-hd) {
+    background-position: top center, bottom 20px center, top -50px center;
   }
 }
 

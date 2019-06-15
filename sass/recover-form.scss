@@ -23,12 +23,19 @@
 
     cursor: text;
     outline: none;
+
+    margin-bottom: 15px;
+    position: relative;
   }
 
   &__error {
     @include font-setting($alternate-font, 0.5em, normal, 400, $text-error);
-    margin-top: 3px;
-    margin-bottom: 10px;
+    position: absolute;
+
+    left: 10px;
+    bottom: 57px;
+
+    display: none;
   }
 
   &__submit {
@@ -65,8 +72,7 @@
 
     &__error {
       font-size: 0.6em;
-      margin-bottom: 15px;
-      margin-top: 5px;
+      bottom: 60px;
     }
 
     &__submit {
@@ -85,12 +91,12 @@
 
     &__input {
       font-size: 1.875em;
+      margin-bottom: 30px;
     }
 
     &__error {
       font-size: 0.875em;
-      margin-bottom: 15px;
-      margin-top: 5px;
+      bottom: 86px;
     }
 
     &__submit {
@@ -114,8 +120,7 @@
 
     &__error {
       font-size: 0.65em;
-      margin-bottom: 15px;
-      margin-top: 5px;
+      bottom: 70px;
     }
 
     &__submit {
@@ -138,8 +143,7 @@
 
     &__error {
       font-size: 0.875em;
-      margin-bottom: 15px;
-      margin-top: 5px;
+      bottom: 86px;
     }
 
     &__submit {
