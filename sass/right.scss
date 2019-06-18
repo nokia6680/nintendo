@@ -6,10 +6,8 @@
 
     .right__information {
       @include flex-setting(column, flex-start, center, nowrap);
-
       text-decoration: none;
       border: 4px solid #000000;
-
       color: #000000;
 
       &:visited {
@@ -18,54 +16,51 @@
     }
 
     .right__list {
-      &--mobile {
-        @include flex-setting(row, flex-start, flex-end, nowrap);
-        list-style: none;
-        margin: 0;
-        padding: 0;
+      @include flex-setting(row, flex-start, flex-end, nowrap);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      border-bottom: 4px solid #000000;
+
+      .right__item {
+        @include flex-setting(column, flex-end, center, nowrap);
+        width: 20%;
+        height: 60px;
+        padding-bottom: 5px;
+        border-right: 4px solid #000000;
+
+        &--1 {
+          order: 4;
+        }
+
+        &--2 {
+          order: 5;
+          border-right: none;
+        }
+
+        &--3 {
+          order: 1;
+        }
+
+        &--4 {
+          order: 2;
+        }
+
+        &--5 {
+          order: 3;
+        }
+      }
+
+      .right__image {
         width: 100%;
-        border-bottom: 4px solid #000000;
-
-        .right__item {
-          @include flex-setting(column, flex-end, center, nowrap);
-          width: 20%;
-          height: 60px;
-          padding-bottom: 5px;
-          border-right: 4px solid #000000;
-
-          &--1 {
-            order: 4;
-          }
-
-          &--2 {
-            order: 5;
-            border-right: none;
-          }
-
-          &--3 {
-            order: 1;
-          }
-
-          &--4 {
-            order: 2;
-          }
-
-          &--5 {
-            order: 3;
-          }
-        }
-
-        .right__image {
-          width: 100%;
-          width: 35px;
-        }
+        width: 35px;
       }
     }
 
     .right__description {
       @include font-setting($secondary-font, 2em, normal, 400, $text-primary);
       text-align: center;
-
       background-color: #ffffff;
       padding-top: 5px;
       padding-bottom: 5px;
@@ -77,7 +72,6 @@
     }
   }
 }
-
 @media only screen and (min-width: $tablet) {
   .right {
     /*Включается только на странице с активным блоком Feedback на мобильном*/
@@ -91,22 +85,20 @@
       }
 
       .right__list {
-        &--mobile {
-          border-bottom: 6px solid #000000;
+        border-bottom: 6px solid #000000;
 
-          .right__item {
-            height: 134px;
-            border-right: 6px solid #000000;
+        .right__item {
+          height: 134px;
+          border-right: 6px solid #000000;
 
-            &--2 {
-              order: 5;
-              border-right: none;
-            }
+          &--2 {
+            order: 5;
+            border-right: none;
           }
+        }
 
-          .right__image {
-            width: 79px;
-          }
+        .right__image {
+          width: 79px;
         }
       }
 
@@ -122,12 +114,10 @@
     }
   }
 }
-
 @media only screen and (min-width: $laptop) {
   .right {
     margin-top: 35px;
     width: 256px;
-
     @include flex-setting(column, flex-start, center, nowrap);
 
     &__list {
@@ -135,19 +125,21 @@
       list-style: none;
       margin: 0;
       padding: 0;
-
       width: 100%;
       height: 246px;
       border-bottom: none;
-
       padding-top: 3px;
       padding-bottom: 3px;
+    }
 
-      .right__image {
-        width: 150px;
-        max-width: 150px;
-        height: auto;
-      }
+    &__item:not(:nth-of-type(3)) {
+      display: none;
+    }
+
+    &__image {
+      width: 150px;
+      max-width: 150px;
+      height: auto;
     }
 
     &__information {
@@ -159,20 +151,18 @@
       height: 320px;
     }
 
-    .right__description {
+    &__description {
       display: inline-flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       line-height: 1;
-
       width: 100%;
       height: auto;
       background-color: #ffffff;
       font-size: 1.82em;
       padding-top: 2px;
       padding-bottom: 2px;
-
       border-top: 5px solid #000000;
 
       &--small {
@@ -181,7 +171,6 @@
     }
   }
 }
-
 @media only screen and (min-width: $widebook-sm) {
   .right {
     margin-top: 50px;
@@ -190,7 +179,6 @@
     &__list {
       padding-top: 5px;
       padding-bottom: 5px;
-
       height: 356px;
 
       .right__image {

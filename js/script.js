@@ -1,3 +1,11 @@
+$(document).resize(function() {
+  if ($(window).width() > 1023 ) {
+    $('.choose__right').removeClass('right--feedback')}
+  else {
+    $('choose__right').addClass('right--feedback');
+  }
+});
+
 /*Слайдер в попапе c заголовками*/
 $(document).ready(function() {
   $('.title-slider').slick({

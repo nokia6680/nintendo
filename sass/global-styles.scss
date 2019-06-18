@@ -44,6 +44,10 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: top center, bottom -75px center;
 
+  .right--feedback {
+    display: none;
+  }
+
   @media only screen and (min-width: $mobile) {
     background-position: top center, bottom -105px center;
   }
@@ -97,28 +101,37 @@ body {
 .body-labo {
   background-image: url('../img/bg-lines.png'), url('../img/bg-labo-lower.png'), url('../img/bg-labo-upper.png');
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: top center, bottom -130px center, top -50px center;
+  background-position: top center, top 360px center, top -50px center;
   transition: 0.2s ease-in-out;
 
   @media only screen and (min-width: $mobile) {
-    background-position: top center, bottom -75px center, top -50px center;
+    background-position: top center, top 420px center, top -50px center;
   }
 
   @media only screen and (min-width: $tablet) {
-    background-position: top center, bottom 15px center, top -50px center;
+    background-position: top center, top 600px center, top -50px center;
   }
 
   @media only screen and (min-width: $laptop) {
-    background-position: top center, bottom -95px center, top -50px center;
+    background-position: top center, top 425px center, top -50px center;
+  }
+
+  @media only screen and (min-width: $laptop-hd) {
+    background-position: top center, top 450px center, top -50px center;
   }
 
   @media only screen and (min-width: $laptop-wide) {
-    background-position: top center, bottom -30px center, top -50px center;
+    background-position: top center, top 450px center, top -50px center;
+    background-size: cover, contain;
+  }
+
+  @media only screen and (min-width: $widebook-sm) {
+    background-position: top center, top 610px center, top -50px center;
     background-size: cover, contain;
   }
 
   @media only screen and (min-width: $widebook-hd) {
-    background-position: top center, bottom 20px center, top -50px center;
+    background-position: top center, top 610px center, top -50px center;
   }
 }
 
