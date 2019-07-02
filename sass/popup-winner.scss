@@ -41,6 +41,13 @@
     border-bottom: 2px solid #000000;
   }
 
+  &__subtitle {
+    @include font-setting($alternate-font, 1.25em, normal, 400, $text-primary);
+    margin-bottom: 0px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
   &__list {
     list-style: none;
     margin: 0;
@@ -70,28 +77,60 @@
         display: none;
       }
     }
+
+    &--main {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__inner {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    @include flex-setting(column, flex-start, flex-start, wrap);
+
+    max-height: 225px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__person {
+    width: 100%;
+    @include flex-setting(column, flex-start, center, nowrap);
   }
 
   &__date {
     @include font-setting($alternate-font, 1.75em, normal, 400, $text-primary);
     margin-bottom: 5px;
-    margin-top: 10px;
   }
 
   &__note {
-    @include font-setting($alternate-font, 1em, normal, 400, $text-primary);
-    margin-bottom: 20px;
+    @include font-setting($alternate-font, 1.25em, normal, 400, $text-primary);
+    margin-bottom: 5px;
+    margin-top: 0px;
+    text-align: center;
   }
 
   &__name {
-    @include font-setting($alternate-font, 1.75em, normal, 400, $text-primary);
+    @include font-setting($alternate-font, 1em, normal, 400, $text-primary);
     margin-bottom: 5px;
-    margin-top: 10px;
+    margin-top: 5px;
+
+    &--main {
+      font-size: 1.375em;
+    }
   }
 
   &__city {
     @include font-setting($alternate-font, 0.875em, normal, 400, $text-primary);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+
+    &--main {
+      font-size: 1em;
+    }
   }
 }
 
@@ -144,37 +183,63 @@
       border-width: 6px;
     }
 
+    &__subtitle {
+      font-size: 1.875em;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    &__inner {
+      max-height: 280px;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
     &__item {
       &::after {
         width: 510px;
         left: -4px;
       }
+
+      &--main {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
     }
 
     &__date {
-      font-size: 3em;
-      margin-bottom: 10px;
-      margin-top: 20px;
+      font-size: 1.875em;
+      margin-bottom: 5px;
+      margin-top: 5px;
     }
 
     &__note {
-      font-size: 1.625em;
-      margin-bottom: 30px;
+      font-size: 1.875em;
+      margin-bottom: 10px;
     }
 
     &__name {
-      font-size: 3em;
-      margin-bottom: 10px;
-      margin-top: 20px;
+      font-size: 1.5em;
+      margin-bottom: 5px;
+      margin-top: 5px;
+
+      &--main {
+        font-size: 2em;
+      }
     }
 
     &__city {
-      font-size: 1.375em;
+      font-size: 1em;
+
+      &--main {
+        font-size: 1.25em;
+      }
     }
   }
 }
 
-@media only screen and (min-width: $laptop) {
+@media only screen and (min-width: $laptop-wide) {
   .popup-winner {
     &__wrapper {
       width: 348px;
@@ -182,12 +247,25 @@
     }
 
     &__title {
-      font-size: 1.75em;
+      font-size: 1.375em;
 
       padding-top: 5px;
       padding-bottom: 5px;
 
       border-width: 5px;
+    }
+
+    &__subtitle {
+      font-size: 1.375em;
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+
+    &__inner {
+      max-height: 225px;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
 
     &__close {
@@ -209,24 +287,33 @@
     }
 
     &__date {
-      font-size: 2.125em;
-      margin-bottom: 0px;
-      margin-top: 20px;
+      font-size: 1.3em;
+      margin-bottom: 5px;
+      margin-top: 5px;
     }
 
     &__note {
-      font-size: 1.125em;
-      margin-bottom: 20px;
+      font-size: 1.3em;
+      margin-bottom: 10px;
     }
 
     &__name {
-      font-size: 2.125em;
+      font-size: 1.125em;
       margin-bottom: 0px;
-      margin-top: 20px;
+      margin-top: 5px;
+
+      &--main {
+        font-size: 1.375em;
+      }
     }
 
     &__city {
-      font-size: 1.175em;
+      font-size: 0.625em;
+      margin-top: 0;
+
+      &--main {
+        font-size: 0.875em;
+      }
     }
   }
 }
@@ -258,6 +345,19 @@
       border-width: 6px;
     }
 
+    &__subtitle {
+      font-size: 1.875em;
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+
+    &__inner {
+      max-height: 280px;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
     &__item {
       &::after {
         width: 510px;
@@ -266,24 +366,33 @@
     }
 
     &__date {
-      font-size: 3em;
-      margin-bottom: 10px;
-      margin-top: 20px;
+      font-size: 1.875em;
+      margin-bottom: 5px;
+      margin-top: 5px;
     }
 
     &__note {
-      font-size: 1.625em;
-      margin-bottom: 30px;
+      font-size: 1.875em;
+      margin-bottom: 10px;
     }
 
     &__name {
-      font-size: 3em;
-      margin-bottom: 10px;
-      margin-top: 20px;
+      font-size: 1.5em;
+      margin-bottom: 0px;
+      margin-top: 5px;
+
+      &--main {
+        font-size: 2em;
+      }
     }
 
     &__city {
-      font-size: 1.375em;
+      font-size: 1em;
+      margin-top: 0;
+
+      &--main {
+        font-size: 1.25em;
+      }
     }
   }
 }
